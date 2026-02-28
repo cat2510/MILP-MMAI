@@ -1,0 +1,457 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_035.mps",
+    "num_vars": 12,
+    "num_constrs": 10,
+    "num_edges": 56,
+    "model_sense": "min",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "AmountProduced_1_1",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 120.0
+      },
+      {
+        "id": "AmountProduced_1_2",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 125.0
+      },
+      {
+        "id": "AmountProduced_1_3",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 130.0
+      },
+      {
+        "id": "AmountProduced_1_4",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 115.0
+      },
+      {
+        "id": "AmountProduced_2_1",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 142.0
+      },
+      {
+        "id": "AmountProduced_2_2",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 146.0
+      },
+      {
+        "id": "AmountProduced_2_3",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 152.0
+      },
+      {
+        "id": "AmountProduced_2_4",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 138.0
+      },
+      {
+        "id": "AmountProduced_3_1",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 168.0
+      },
+      {
+        "id": "AmountProduced_3_2",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 174.0
+      },
+      {
+        "id": "AmountProduced_3_3",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 178.0
+      },
+      {
+        "id": "AmountProduced_3_4",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 164.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "Demand_1",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 200.0
+      },
+      {
+        "id": "Demand_2",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 300.0
+      },
+      {
+        "id": "Demand_3",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 400.0
+      },
+      {
+        "id": "Demand_4",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 500.0
+      },
+      {
+        "id": "YieldCapacity_1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 500.0
+      },
+      {
+        "id": "YieldCapacity_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 400.0
+      },
+      {
+        "id": "YieldCapacity_3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 600.0
+      },
+      {
+        "id": "WaterUsage",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "FertilizerUsage",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "min",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "Demand_1",
+      "dst": "AmountProduced_1_1",
+      "coef": 1.0
+    },
+    {
+      "src": "Demand_1",
+      "dst": "AmountProduced_2_1",
+      "coef": 1.0
+    },
+    {
+      "src": "Demand_1",
+      "dst": "AmountProduced_3_1",
+      "coef": 1.0
+    },
+    {
+      "src": "Demand_2",
+      "dst": "AmountProduced_1_2",
+      "coef": 1.0
+    },
+    {
+      "src": "Demand_2",
+      "dst": "AmountProduced_2_2",
+      "coef": 1.0
+    },
+    {
+      "src": "Demand_2",
+      "dst": "AmountProduced_3_2",
+      "coef": 1.0
+    },
+    {
+      "src": "Demand_3",
+      "dst": "AmountProduced_1_3",
+      "coef": 1.0
+    },
+    {
+      "src": "Demand_3",
+      "dst": "AmountProduced_2_3",
+      "coef": 1.0
+    },
+    {
+      "src": "Demand_3",
+      "dst": "AmountProduced_3_3",
+      "coef": 1.0
+    },
+    {
+      "src": "Demand_4",
+      "dst": "AmountProduced_1_4",
+      "coef": 1.0
+    },
+    {
+      "src": "Demand_4",
+      "dst": "AmountProduced_2_4",
+      "coef": 1.0
+    },
+    {
+      "src": "Demand_4",
+      "dst": "AmountProduced_3_4",
+      "coef": 1.0
+    },
+    {
+      "src": "YieldCapacity_1",
+      "dst": "AmountProduced_1_1",
+      "coef": 1.0
+    },
+    {
+      "src": "YieldCapacity_1",
+      "dst": "AmountProduced_1_2",
+      "coef": 1.0
+    },
+    {
+      "src": "YieldCapacity_1",
+      "dst": "AmountProduced_1_3",
+      "coef": 1.0
+    },
+    {
+      "src": "YieldCapacity_1",
+      "dst": "AmountProduced_1_4",
+      "coef": 1.0
+    },
+    {
+      "src": "YieldCapacity_2",
+      "dst": "AmountProduced_2_1",
+      "coef": 1.0
+    },
+    {
+      "src": "YieldCapacity_2",
+      "dst": "AmountProduced_2_2",
+      "coef": 1.0
+    },
+    {
+      "src": "YieldCapacity_2",
+      "dst": "AmountProduced_2_3",
+      "coef": 1.0
+    },
+    {
+      "src": "YieldCapacity_2",
+      "dst": "AmountProduced_2_4",
+      "coef": 1.0
+    },
+    {
+      "src": "YieldCapacity_3",
+      "dst": "AmountProduced_3_1",
+      "coef": 1.0
+    },
+    {
+      "src": "YieldCapacity_3",
+      "dst": "AmountProduced_3_2",
+      "coef": 1.0
+    },
+    {
+      "src": "YieldCapacity_3",
+      "dst": "AmountProduced_3_3",
+      "coef": 1.0
+    },
+    {
+      "src": "YieldCapacity_3",
+      "dst": "AmountProduced_3_4",
+      "coef": 1.0
+    },
+    {
+      "src": "WaterUsage",
+      "dst": "AmountProduced_1_1",
+      "coef": -1.0
+    },
+    {
+      "src": "WaterUsage",
+      "dst": "AmountProduced_1_2",
+      "coef": -1.0
+    },
+    {
+      "src": "WaterUsage",
+      "dst": "AmountProduced_1_3",
+      "coef": -1.0
+    },
+    {
+      "src": "WaterUsage",
+      "dst": "AmountProduced_1_4",
+      "coef": -1.0
+    },
+    {
+      "src": "WaterUsage",
+      "dst": "AmountProduced_2_1",
+      "coef": 1.0
+    },
+    {
+      "src": "WaterUsage",
+      "dst": "AmountProduced_2_2",
+      "coef": 1.0
+    },
+    {
+      "src": "WaterUsage",
+      "dst": "AmountProduced_2_3",
+      "coef": 1.0
+    },
+    {
+      "src": "WaterUsage",
+      "dst": "AmountProduced_2_4",
+      "coef": 1.0
+    },
+    {
+      "src": "WaterUsage",
+      "dst": "AmountProduced_3_1",
+      "coef": -1.0
+    },
+    {
+      "src": "WaterUsage",
+      "dst": "AmountProduced_3_2",
+      "coef": -1.0
+    },
+    {
+      "src": "WaterUsage",
+      "dst": "AmountProduced_3_3",
+      "coef": -1.0
+    },
+    {
+      "src": "WaterUsage",
+      "dst": "AmountProduced_3_4",
+      "coef": -1.0
+    },
+    {
+      "src": "FertilizerUsage",
+      "dst": "AmountProduced_1_1",
+      "coef": 1.0
+    },
+    {
+      "src": "FertilizerUsage",
+      "dst": "AmountProduced_1_2",
+      "coef": 1.0
+    },
+    {
+      "src": "FertilizerUsage",
+      "dst": "AmountProduced_1_3",
+      "coef": 1.0
+    },
+    {
+      "src": "FertilizerUsage",
+      "dst": "AmountProduced_1_4",
+      "coef": 1.0
+    },
+    {
+      "src": "FertilizerUsage",
+      "dst": "AmountProduced_3_1",
+      "coef": -1.0
+    },
+    {
+      "src": "FertilizerUsage",
+      "dst": "AmountProduced_3_2",
+      "coef": -1.0
+    },
+    {
+      "src": "FertilizerUsage",
+      "dst": "AmountProduced_3_3",
+      "coef": -1.0
+    },
+    {
+      "src": "FertilizerUsage",
+      "dst": "AmountProduced_3_4",
+      "coef": -1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "AmountProduced_1_1",
+      "coef": 120.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "AmountProduced_1_2",
+      "coef": 125.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "AmountProduced_1_3",
+      "coef": 130.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "AmountProduced_1_4",
+      "coef": 115.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "AmountProduced_2_1",
+      "coef": 142.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "AmountProduced_2_2",
+      "coef": 146.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "AmountProduced_2_3",
+      "coef": 152.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "AmountProduced_2_4",
+      "coef": 138.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "AmountProduced_3_1",
+      "coef": 168.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "AmountProduced_3_2",
+      "coef": 174.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "AmountProduced_3_3",
+      "coef": 178.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "AmountProduced_3_4",
+      "coef": 164.0
+    }
+  ]
+}

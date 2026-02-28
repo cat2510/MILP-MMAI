@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_052.mps",
+    "num_vars": 5,
+    "num_constrs": 9,
+    "num_edges": 29,
+    "model_sense": "min",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "Select[F1]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1.0
+      },
+      {
+        "id": "Select[F2]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1.0
+      },
+      {
+        "id": "Select[F3]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1.0
+      },
+      {
+        "id": "Select[F4]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1.0
+      },
+      {
+        "id": "Select[F5]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "Cover_R1",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 1.0
+      },
+      {
+        "id": "Cover_R2",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 1.0
+      },
+      {
+        "id": "Cover_R3",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 1.0
+      },
+      {
+        "id": "Cover_R4",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 1.0
+      },
+      {
+        "id": "Cover_R5",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 1.0
+      },
+      {
+        "id": "Cover_R6",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 1.0
+      },
+      {
+        "id": "Cover_R7",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 1.0
+      },
+      {
+        "id": "Cover_R8",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 1.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "min",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "Cover_R1",
+      "dst": "Select[F1]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R1",
+      "dst": "Select[F2]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R1",
+      "dst": "Select[F4]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R1",
+      "dst": "Select[F5]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R2",
+      "dst": "Select[F2]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R2",
+      "dst": "Select[F3]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R3",
+      "dst": "Select[F1]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R3",
+      "dst": "Select[F3]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R3",
+      "dst": "Select[F5]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R4",
+      "dst": "Select[F2]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R4",
+      "dst": "Select[F3]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R4",
+      "dst": "Select[F4]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R5",
+      "dst": "Select[F1]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R5",
+      "dst": "Select[F2]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R5",
+      "dst": "Select[F4]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R5",
+      "dst": "Select[F5]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R6",
+      "dst": "Select[F3]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R6",
+      "dst": "Select[F4]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R7",
+      "dst": "Select[F2]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R7",
+      "dst": "Select[F3]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R7",
+      "dst": "Select[F5]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R8",
+      "dst": "Select[F1]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R8",
+      "dst": "Select[F4]",
+      "coef": 1.0
+    },
+    {
+      "src": "Cover_R8",
+      "dst": "Select[F5]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "Select[F1]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "Select[F2]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "Select[F3]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "Select[F4]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "Select[F5]",
+      "coef": 1.0
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_044.mps",
+    "num_vars": 6,
+    "num_constrs": 13,
+    "num_edges": 24,
+    "model_sense": "max",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "VehiclesDeployed_0_0",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 7000.0
+      },
+      {
+        "id": "VehiclesDeployed_0_1",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 7000.0
+      },
+      {
+        "id": "VehiclesDeployed_0_2",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 7000.0
+      },
+      {
+        "id": "VehiclesDeployed_1_0",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 4000.0
+      },
+      {
+        "id": "VehiclesDeployed_1_1",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 4000.0
+      },
+      {
+        "id": "VehiclesDeployed_1_2",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 4000.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "CarbonEmissions_Year_0",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "CarbonEmissions_Year_1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "CarbonEmissions_Year_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "FleetCapacity_Year_0",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 400.0
+      },
+      {
+        "id": "FleetCapacity_Year_1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 400.0
+      },
+      {
+        "id": "FleetCapacity_Year_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 400.0
+      },
+      {
+        "id": "YearlyVehicleLimit_Type_0_Year_0",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 300.0
+      },
+      {
+        "id": "YearlyVehicleLimit_Type_0_Year_1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 320.0
+      },
+      {
+        "id": "YearlyVehicleLimit_Type_0_Year_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 350.0
+      },
+      {
+        "id": "YearlyVehicleLimit_Type_1_Year_0",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 250.0
+      },
+      {
+        "id": "YearlyVehicleLimit_Type_1_Year_1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 280.0
+      },
+      {
+        "id": "YearlyVehicleLimit_Type_1_Year_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 300.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "max",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "CarbonEmissions_Year_0",
+      "dst": "VehiclesDeployed_0_0",
+      "coef": 30.0
+    },
+    {
+      "src": "CarbonEmissions_Year_0",
+      "dst": "VehiclesDeployed_1_0",
+      "coef": -10.0
+    },
+    {
+      "src": "CarbonEmissions_Year_1",
+      "dst": "VehiclesDeployed_0_1",
+      "coef": 30.0
+    },
+    {
+      "src": "CarbonEmissions_Year_1",
+      "dst": "VehiclesDeployed_1_1",
+      "coef": -10.0
+    },
+    {
+      "src": "CarbonEmissions_Year_2",
+      "dst": "VehiclesDeployed_0_2",
+      "coef": 30.0
+    },
+    {
+      "src": "CarbonEmissions_Year_2",
+      "dst": "VehiclesDeployed_1_2",
+      "coef": -10.0
+    },
+    {
+      "src": "FleetCapacity_Year_0",
+      "dst": "VehiclesDeployed_0_0",
+      "coef": 1.0
+    },
+    {
+      "src": "FleetCapacity_Year_0",
+      "dst": "VehiclesDeployed_1_0",
+      "coef": 1.0
+    },
+    {
+      "src": "FleetCapacity_Year_1",
+      "dst": "VehiclesDeployed_0_1",
+      "coef": 1.0
+    },
+    {
+      "src": "FleetCapacity_Year_1",
+      "dst": "VehiclesDeployed_1_1",
+      "coef": 1.0
+    },
+    {
+      "src": "FleetCapacity_Year_2",
+      "dst": "VehiclesDeployed_0_2",
+      "coef": 1.0
+    },
+    {
+      "src": "FleetCapacity_Year_2",
+      "dst": "VehiclesDeployed_1_2",
+      "coef": 1.0
+    },
+    {
+      "src": "YearlyVehicleLimit_Type_0_Year_0",
+      "dst": "VehiclesDeployed_0_0",
+      "coef": 1.0
+    },
+    {
+      "src": "YearlyVehicleLimit_Type_0_Year_1",
+      "dst": "VehiclesDeployed_0_1",
+      "coef": 1.0
+    },
+    {
+      "src": "YearlyVehicleLimit_Type_0_Year_2",
+      "dst": "VehiclesDeployed_0_2",
+      "coef": 1.0
+    },
+    {
+      "src": "YearlyVehicleLimit_Type_1_Year_0",
+      "dst": "VehiclesDeployed_1_0",
+      "coef": 1.0
+    },
+    {
+      "src": "YearlyVehicleLimit_Type_1_Year_1",
+      "dst": "VehiclesDeployed_1_1",
+      "coef": 1.0
+    },
+    {
+      "src": "YearlyVehicleLimit_Type_1_Year_2",
+      "dst": "VehiclesDeployed_1_2",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "VehiclesDeployed_0_0",
+      "coef": 7000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "VehiclesDeployed_0_1",
+      "coef": 7000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "VehiclesDeployed_0_2",
+      "coef": 7000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "VehiclesDeployed_1_0",
+      "coef": 4000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "VehiclesDeployed_1_1",
+      "coef": 4000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "VehiclesDeployed_1_2",
+      "coef": 4000.0
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_026.mps",
+    "num_vars": 9,
+    "num_constrs": 7,
+    "num_edges": 21,
+    "model_sense": "min",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "X[cotton,cotton_fabric]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 450.0
+      },
+      {
+        "id": "X[cotton,jute_fabric]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "X[cotton,linen_fabric]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 450.0
+      },
+      {
+        "id": "X[jute,cotton_fabric]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 480.0
+      },
+      {
+        "id": "X[jute,jute_fabric]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 480.0
+      },
+      {
+        "id": "X[jute,linen_fabric]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 480.0
+      },
+      {
+        "id": "X[linen,cotton_fabric]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "X[linen,jute_fabric]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 450.0
+      },
+      {
+        "id": "X[linen,linen_fabric]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 450.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "Demand_cotton_fabric",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 300.0
+      },
+      {
+        "id": "Demand_jute_fabric",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 400.0
+      },
+      {
+        "id": "Demand_linen_fabric",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 200.0
+      },
+      {
+        "id": "Availability_cotton",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 1000.0
+      },
+      {
+        "id": "Availability_jute",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 800.0
+      },
+      {
+        "id": "Availability_linen",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 600.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "min",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "Demand_cotton_fabric",
+      "dst": "X[cotton,cotton_fabric]",
+      "coef": 0.7
+    },
+    {
+      "src": "Demand_cotton_fabric",
+      "dst": "X[jute,cotton_fabric]",
+      "coef": 0.7
+    },
+    {
+      "src": "Demand_jute_fabric",
+      "dst": "X[jute,jute_fabric]",
+      "coef": 0.75
+    },
+    {
+      "src": "Demand_jute_fabric",
+      "dst": "X[linen,jute_fabric]",
+      "coef": 0.75
+    },
+    {
+      "src": "Demand_linen_fabric",
+      "dst": "X[cotton,linen_fabric]",
+      "coef": 0.8
+    },
+    {
+      "src": "Demand_linen_fabric",
+      "dst": "X[jute,linen_fabric]",
+      "coef": 0.8
+    },
+    {
+      "src": "Demand_linen_fabric",
+      "dst": "X[linen,linen_fabric]",
+      "coef": 0.8
+    },
+    {
+      "src": "Availability_cotton",
+      "dst": "X[cotton,cotton_fabric]",
+      "coef": 1.0
+    },
+    {
+      "src": "Availability_cotton",
+      "dst": "X[cotton,linen_fabric]",
+      "coef": 1.0
+    },
+    {
+      "src": "Availability_jute",
+      "dst": "X[jute,cotton_fabric]",
+      "coef": 1.0
+    },
+    {
+      "src": "Availability_jute",
+      "dst": "X[jute,jute_fabric]",
+      "coef": 1.0
+    },
+    {
+      "src": "Availability_jute",
+      "dst": "X[jute,linen_fabric]",
+      "coef": 1.0
+    },
+    {
+      "src": "Availability_linen",
+      "dst": "X[linen,jute_fabric]",
+      "coef": 1.0
+    },
+    {
+      "src": "Availability_linen",
+      "dst": "X[linen,linen_fabric]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "X[cotton,cotton_fabric]",
+      "coef": 450.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "X[cotton,linen_fabric]",
+      "coef": 450.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "X[jute,cotton_fabric]",
+      "coef": 480.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "X[jute,jute_fabric]",
+      "coef": 480.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "X[jute,linen_fabric]",
+      "coef": 480.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "X[linen,jute_fabric]",
+      "coef": 450.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "X[linen,linen_fabric]",
+      "coef": 450.0
+    }
+  ]
+}

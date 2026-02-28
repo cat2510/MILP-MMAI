@@ -1,0 +1,473 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_024.mps",
+    "num_vars": 18,
+    "num_constrs": 13,
+    "num_edges": 46,
+    "model_sense": "max",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "SellingAmount[1]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 30000.0
+      },
+      {
+        "id": "SellingAmount[2]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 35000.0
+      },
+      {
+        "id": "SellingAmount[3]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 40000.0
+      },
+      {
+        "id": "SellingAmount[4]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 36000.0
+      },
+      {
+        "id": "SellingAmount[5]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 38000.0
+      },
+      {
+        "id": "SellingAmount[6]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 42000.0
+      },
+      {
+        "id": "PurchaseAmount[1]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": -32000.0
+      },
+      {
+        "id": "PurchaseAmount[2]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": -36000.0
+      },
+      {
+        "id": "PurchaseAmount[3]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": -38000.0
+      },
+      {
+        "id": "PurchaseAmount[4]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": -33000.0
+      },
+      {
+        "id": "PurchaseAmount[5]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": -39000.0
+      },
+      {
+        "id": "PurchaseAmount[6]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": -40000.0
+      },
+      {
+        "id": "Inventory[1]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": 500.0,
+        "obj": 0.0
+      },
+      {
+        "id": "Inventory[2]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": 500.0,
+        "obj": 0.0
+      },
+      {
+        "id": "Inventory[3]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": 500.0,
+        "obj": 0.0
+      },
+      {
+        "id": "Inventory[4]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": 500.0,
+        "obj": 0.0
+      },
+      {
+        "id": "Inventory[5]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": 500.0,
+        "obj": 0.0
+      },
+      {
+        "id": "Inventory[6]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": 500.0,
+        "obj": 0.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "InitialInventory",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 150.0
+      },
+      {
+        "id": "InventoryBalance[2]",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "InventoryBalance[3]",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "InventoryBalance[4]",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "InventoryBalance[5]",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "InventoryBalance[6]",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "InitialInventoryLimit",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 150.0
+      },
+      {
+        "id": "InventoryLimit[2]",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "InventoryLimit[3]",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "InventoryLimit[4]",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "InventoryLimit[5]",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "InventoryLimit[6]",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "max",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "InitialInventory",
+      "dst": "SellingAmount[1]",
+      "coef": 1.0
+    },
+    {
+      "src": "InitialInventory",
+      "dst": "PurchaseAmount[1]",
+      "coef": -1.0
+    },
+    {
+      "src": "InitialInventory",
+      "dst": "Inventory[1]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryBalance[2]",
+      "dst": "SellingAmount[2]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryBalance[2]",
+      "dst": "PurchaseAmount[2]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryBalance[2]",
+      "dst": "Inventory[1]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryBalance[2]",
+      "dst": "Inventory[2]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryBalance[3]",
+      "dst": "SellingAmount[3]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryBalance[3]",
+      "dst": "PurchaseAmount[3]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryBalance[3]",
+      "dst": "Inventory[2]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryBalance[3]",
+      "dst": "Inventory[3]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryBalance[4]",
+      "dst": "SellingAmount[4]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryBalance[4]",
+      "dst": "PurchaseAmount[4]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryBalance[4]",
+      "dst": "Inventory[3]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryBalance[4]",
+      "dst": "Inventory[4]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryBalance[5]",
+      "dst": "SellingAmount[5]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryBalance[5]",
+      "dst": "PurchaseAmount[5]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryBalance[5]",
+      "dst": "Inventory[4]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryBalance[5]",
+      "dst": "Inventory[5]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryBalance[6]",
+      "dst": "SellingAmount[6]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryBalance[6]",
+      "dst": "PurchaseAmount[6]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryBalance[6]",
+      "dst": "Inventory[5]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryBalance[6]",
+      "dst": "Inventory[6]",
+      "coef": 1.0
+    },
+    {
+      "src": "InitialInventoryLimit",
+      "dst": "SellingAmount[1]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryLimit[2]",
+      "dst": "SellingAmount[2]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryLimit[2]",
+      "dst": "Inventory[1]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryLimit[3]",
+      "dst": "SellingAmount[3]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryLimit[3]",
+      "dst": "Inventory[2]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryLimit[4]",
+      "dst": "SellingAmount[4]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryLimit[4]",
+      "dst": "Inventory[3]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryLimit[5]",
+      "dst": "SellingAmount[5]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryLimit[5]",
+      "dst": "Inventory[4]",
+      "coef": -1.0
+    },
+    {
+      "src": "InventoryLimit[6]",
+      "dst": "SellingAmount[6]",
+      "coef": 1.0
+    },
+    {
+      "src": "InventoryLimit[6]",
+      "dst": "Inventory[5]",
+      "coef": -1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "SellingAmount[1]",
+      "coef": 30000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "SellingAmount[2]",
+      "coef": 35000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "SellingAmount[3]",
+      "coef": 40000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "SellingAmount[4]",
+      "coef": 36000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "SellingAmount[5]",
+      "coef": 38000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "SellingAmount[6]",
+      "coef": 42000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "PurchaseAmount[1]",
+      "coef": -32000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "PurchaseAmount[2]",
+      "coef": -36000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "PurchaseAmount[3]",
+      "coef": -38000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "PurchaseAmount[4]",
+      "coef": -33000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "PurchaseAmount[5]",
+      "coef": -39000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "PurchaseAmount[6]",
+      "coef": -40000.0
+    }
+  ]
+}

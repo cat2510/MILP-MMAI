@@ -1,0 +1,1695 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_062.mps",
+    "num_vars": 48,
+    "num_constrs": 55,
+    "num_edges": 192,
+    "model_sense": "min",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "edge_selected[0,1]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 12.0
+      },
+      {
+        "id": "edge_selected[0,2]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 8.0
+      },
+      {
+        "id": "edge_selected[1,2]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 5.0
+      },
+      {
+        "id": "edge_selected[1,3]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 9.0
+      },
+      {
+        "id": "edge_selected[2,4]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 7.0
+      },
+      {
+        "id": "edge_selected[3,4]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 6.0
+      },
+      {
+        "id": "edge_selected[3,5]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 11.0
+      },
+      {
+        "id": "edge_selected[4,6]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 10.0
+      },
+      {
+        "id": "edge_selected[5,6]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 4.0
+      },
+      {
+        "id": "edge_selected[5,7]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 8.0
+      },
+      {
+        "id": "edge_selected[6,8]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 7.0
+      },
+      {
+        "id": "edge_selected[7,8]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 6.0
+      },
+      {
+        "id": "edge_selected[1,0]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 0.0
+      },
+      {
+        "id": "edge_selected[2,0]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 0.0
+      },
+      {
+        "id": "edge_selected[2,1]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 0.0
+      },
+      {
+        "id": "edge_selected[3,1]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 0.0
+      },
+      {
+        "id": "edge_selected[4,2]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 0.0
+      },
+      {
+        "id": "edge_selected[4,3]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 0.0
+      },
+      {
+        "id": "edge_selected[5,3]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 0.0
+      },
+      {
+        "id": "edge_selected[6,4]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 0.0
+      },
+      {
+        "id": "edge_selected[6,5]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 0.0
+      },
+      {
+        "id": "edge_selected[7,5]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 0.0
+      },
+      {
+        "id": "edge_selected[8,6]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 0.0
+      },
+      {
+        "id": "edge_selected[8,7]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[0,1]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[0,2]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[1,2]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[1,3]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[2,4]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[3,4]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[3,5]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[4,6]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[5,6]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[5,7]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[6,8]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[7,8]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[1,0]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[2,0]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[2,1]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[3,1]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[4,2]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[4,3]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[5,3]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[6,4]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[6,5]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[7,5]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[8,6]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "flow[8,7]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "num_edges",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 8.0
+      },
+      {
+        "id": "flow_balance_0",
+        "type": "constr",
+        "sense": "=",
+        "rhs": -8.0
+      },
+      {
+        "id": "flow_balance_1",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "flow_balance_2",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "flow_balance_3",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "flow_balance_4",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "flow_balance_5",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "flow_balance_6",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "flow_balance_7",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "flow_balance_8",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "flow_link_0_1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_0_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_1_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_1_3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_2_4",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_3_4",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_3_5",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_4_6",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_5_6",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_5_7",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_6_8",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_7_8",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_1_0",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_2_0",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_2_1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_3_1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_4_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_4_3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_5_3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_6_4",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_6_5",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_7_5",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_8_6",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_link_8_7",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_1_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_1_3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_2_4",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_3_4",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_3_5",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_4_6",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_5_6",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_5_7",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_6_8",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_7_8",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_2_1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_3_1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_4_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_4_3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_5_3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_6_4",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_6_5",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_7_5",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_8_6",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "capacity_8_7",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "min",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[0,1]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[0,2]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[1,2]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[1,3]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[2,4]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[3,4]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[3,5]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[4,6]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[5,6]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[5,7]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[6,8]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[7,8]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[1,0]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[2,0]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[2,1]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[3,1]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[4,2]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[4,3]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[5,3]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[6,4]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[6,5]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[7,5]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[8,6]",
+      "coef": 0.5
+    },
+    {
+      "src": "num_edges",
+      "dst": "edge_selected[8,7]",
+      "coef": 0.5
+    },
+    {
+      "src": "flow_balance_0",
+      "dst": "flow[0,1]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_0",
+      "dst": "flow[0,2]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_0",
+      "dst": "flow[1,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_0",
+      "dst": "flow[2,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_1",
+      "dst": "flow[0,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_1",
+      "dst": "flow[1,2]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_1",
+      "dst": "flow[1,3]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_1",
+      "dst": "flow[1,0]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_1",
+      "dst": "flow[2,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_1",
+      "dst": "flow[3,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_2",
+      "dst": "flow[0,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_2",
+      "dst": "flow[1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_2",
+      "dst": "flow[2,4]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_2",
+      "dst": "flow[2,0]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_2",
+      "dst": "flow[2,1]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_2",
+      "dst": "flow[4,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_3",
+      "dst": "flow[1,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_3",
+      "dst": "flow[3,4]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_3",
+      "dst": "flow[3,5]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_3",
+      "dst": "flow[3,1]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_3",
+      "dst": "flow[4,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_3",
+      "dst": "flow[5,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_4",
+      "dst": "flow[2,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_4",
+      "dst": "flow[3,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_4",
+      "dst": "flow[4,6]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_4",
+      "dst": "flow[4,2]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_4",
+      "dst": "flow[4,3]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_4",
+      "dst": "flow[6,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_5",
+      "dst": "flow[3,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_5",
+      "dst": "flow[5,6]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_5",
+      "dst": "flow[5,7]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_5",
+      "dst": "flow[5,3]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_5",
+      "dst": "flow[6,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_5",
+      "dst": "flow[7,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_6",
+      "dst": "flow[4,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_6",
+      "dst": "flow[5,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_6",
+      "dst": "flow[6,8]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_6",
+      "dst": "flow[6,4]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_6",
+      "dst": "flow[6,5]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_6",
+      "dst": "flow[8,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_7",
+      "dst": "flow[5,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_7",
+      "dst": "flow[7,8]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_7",
+      "dst": "flow[7,5]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_7",
+      "dst": "flow[8,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_8",
+      "dst": "flow[6,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_8",
+      "dst": "flow[7,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_balance_8",
+      "dst": "flow[8,6]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_balance_8",
+      "dst": "flow[8,7]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_link_0_1",
+      "dst": "edge_selected[0,1]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_0_1",
+      "dst": "flow[0,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_0_2",
+      "dst": "edge_selected[0,2]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_0_2",
+      "dst": "flow[0,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_1_2",
+      "dst": "edge_selected[1,2]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_1_2",
+      "dst": "flow[1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_1_3",
+      "dst": "edge_selected[1,3]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_1_3",
+      "dst": "flow[1,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_2_4",
+      "dst": "edge_selected[2,4]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_2_4",
+      "dst": "flow[2,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_3_4",
+      "dst": "edge_selected[3,4]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_3_4",
+      "dst": "flow[3,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_3_5",
+      "dst": "edge_selected[3,5]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_3_5",
+      "dst": "flow[3,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_4_6",
+      "dst": "edge_selected[4,6]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_4_6",
+      "dst": "flow[4,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_5_6",
+      "dst": "edge_selected[5,6]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_5_6",
+      "dst": "flow[5,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_5_7",
+      "dst": "edge_selected[5,7]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_5_7",
+      "dst": "flow[5,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_6_8",
+      "dst": "edge_selected[6,8]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_6_8",
+      "dst": "flow[6,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_7_8",
+      "dst": "edge_selected[7,8]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_7_8",
+      "dst": "flow[7,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_1_0",
+      "dst": "edge_selected[1,0]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_1_0",
+      "dst": "flow[1,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_2_0",
+      "dst": "edge_selected[2,0]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_2_0",
+      "dst": "flow[2,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_2_1",
+      "dst": "edge_selected[2,1]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_2_1",
+      "dst": "flow[2,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_3_1",
+      "dst": "edge_selected[3,1]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_3_1",
+      "dst": "flow[3,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_4_2",
+      "dst": "edge_selected[4,2]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_4_2",
+      "dst": "flow[4,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_4_3",
+      "dst": "edge_selected[4,3]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_4_3",
+      "dst": "flow[4,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_5_3",
+      "dst": "edge_selected[5,3]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_5_3",
+      "dst": "flow[5,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_6_4",
+      "dst": "edge_selected[6,4]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_6_4",
+      "dst": "flow[6,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_6_5",
+      "dst": "edge_selected[6,5]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_6_5",
+      "dst": "flow[6,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_7_5",
+      "dst": "edge_selected[7,5]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_7_5",
+      "dst": "flow[7,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_8_6",
+      "dst": "edge_selected[8,6]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_8_6",
+      "dst": "flow[8,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_link_8_7",
+      "dst": "edge_selected[8,7]",
+      "coef": -8.0
+    },
+    {
+      "src": "flow_link_8_7",
+      "dst": "flow[8,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_1_2",
+      "dst": "edge_selected[1,2]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_1_2",
+      "dst": "flow[1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_1_2",
+      "dst": "flow[2,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_1_3",
+      "dst": "edge_selected[1,3]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_1_3",
+      "dst": "flow[1,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_1_3",
+      "dst": "flow[3,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_2_4",
+      "dst": "edge_selected[2,4]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_2_4",
+      "dst": "flow[2,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_2_4",
+      "dst": "flow[4,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_3_4",
+      "dst": "edge_selected[3,4]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_3_4",
+      "dst": "flow[3,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_3_4",
+      "dst": "flow[4,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_3_5",
+      "dst": "edge_selected[3,5]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_3_5",
+      "dst": "flow[3,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_3_5",
+      "dst": "flow[5,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_4_6",
+      "dst": "edge_selected[4,6]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_4_6",
+      "dst": "flow[4,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_4_6",
+      "dst": "flow[6,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_5_6",
+      "dst": "edge_selected[5,6]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_5_6",
+      "dst": "flow[5,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_5_6",
+      "dst": "flow[6,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_5_7",
+      "dst": "edge_selected[5,7]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_5_7",
+      "dst": "flow[5,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_5_7",
+      "dst": "flow[7,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_6_8",
+      "dst": "edge_selected[6,8]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_6_8",
+      "dst": "flow[6,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_6_8",
+      "dst": "flow[8,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_7_8",
+      "dst": "edge_selected[7,8]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_7_8",
+      "dst": "flow[7,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_7_8",
+      "dst": "flow[8,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_2_1",
+      "dst": "edge_selected[2,1]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_2_1",
+      "dst": "flow[1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_2_1",
+      "dst": "flow[2,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_3_1",
+      "dst": "edge_selected[3,1]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_3_1",
+      "dst": "flow[1,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_3_1",
+      "dst": "flow[3,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_4_2",
+      "dst": "edge_selected[4,2]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_4_2",
+      "dst": "flow[2,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_4_2",
+      "dst": "flow[4,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_4_3",
+      "dst": "edge_selected[4,3]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_4_3",
+      "dst": "flow[3,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_4_3",
+      "dst": "flow[4,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_5_3",
+      "dst": "edge_selected[5,3]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_5_3",
+      "dst": "flow[3,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_5_3",
+      "dst": "flow[5,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_6_4",
+      "dst": "edge_selected[6,4]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_6_4",
+      "dst": "flow[4,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_6_4",
+      "dst": "flow[6,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_6_5",
+      "dst": "edge_selected[6,5]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_6_5",
+      "dst": "flow[5,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_6_5",
+      "dst": "flow[6,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_7_5",
+      "dst": "edge_selected[7,5]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_7_5",
+      "dst": "flow[5,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_7_5",
+      "dst": "flow[7,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_8_6",
+      "dst": "edge_selected[8,6]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_8_6",
+      "dst": "flow[6,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_8_6",
+      "dst": "flow[8,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_8_7",
+      "dst": "edge_selected[8,7]",
+      "coef": -3.0
+    },
+    {
+      "src": "capacity_8_7",
+      "dst": "flow[7,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "capacity_8_7",
+      "dst": "flow[8,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "edge_selected[0,1]",
+      "coef": 12.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "edge_selected[0,2]",
+      "coef": 8.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "edge_selected[1,2]",
+      "coef": 5.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "edge_selected[1,3]",
+      "coef": 9.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "edge_selected[2,4]",
+      "coef": 7.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "edge_selected[3,4]",
+      "coef": 6.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "edge_selected[3,5]",
+      "coef": 11.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "edge_selected[4,6]",
+      "coef": 10.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "edge_selected[5,6]",
+      "coef": 4.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "edge_selected[5,7]",
+      "coef": 8.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "edge_selected[6,8]",
+      "coef": 7.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "edge_selected[7,8]",
+      "coef": 6.0
+    }
+  ]
+}

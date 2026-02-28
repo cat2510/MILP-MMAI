@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_043.mps",
+    "num_vars": 2,
+    "num_constrs": 4,
+    "num_edges": 8,
+    "model_sense": "max",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "PriorityPrice",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": 120.0,
+        "obj": 1000.0
+      },
+      {
+        "id": "EconomyPrice",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": 110.0,
+        "obj": 1500.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "small_business_preference",
+        "type": "constr",
+        "sense": ">",
+        "rhs": -40.0
+      },
+      {
+        "id": "large_enterprise_preference",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 20.0
+      },
+      {
+        "id": "price_difference",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 15.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "max",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "small_business_preference",
+      "dst": "PriorityPrice",
+      "coef": -1.0
+    },
+    {
+      "src": "small_business_preference",
+      "dst": "EconomyPrice",
+      "coef": 1.0
+    },
+    {
+      "src": "large_enterprise_preference",
+      "dst": "PriorityPrice",
+      "coef": -1.0
+    },
+    {
+      "src": "large_enterprise_preference",
+      "dst": "EconomyPrice",
+      "coef": 1.0
+    },
+    {
+      "src": "price_difference",
+      "dst": "PriorityPrice",
+      "coef": 1.0
+    },
+    {
+      "src": "price_difference",
+      "dst": "EconomyPrice",
+      "coef": -1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "PriorityPrice",
+      "coef": 1000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "EconomyPrice",
+      "coef": 1500.0
+    }
+  ]
+}

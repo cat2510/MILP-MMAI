@@ -1,0 +1,1351 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_074.mps",
+    "num_vars": 40,
+    "num_constrs": 35,
+    "num_edges": 160,
+    "model_sense": "min",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "flow[1,2,A]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[1,2,B]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[1,2,C]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[1,2,D]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[1,2,E]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[1,3,A]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 4.0
+      },
+      {
+        "id": "flow[1,3,B]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 4.0
+      },
+      {
+        "id": "flow[1,3,C]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 4.0
+      },
+      {
+        "id": "flow[1,3,D]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 4.0
+      },
+      {
+        "id": "flow[1,3,E]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 4.0
+      },
+      {
+        "id": "flow[2,3,A]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[2,3,B]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[2,3,C]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[2,3,D]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[2,3,E]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[2,4,A]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 5.0
+      },
+      {
+        "id": "flow[2,4,B]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 5.0
+      },
+      {
+        "id": "flow[2,4,C]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 5.0
+      },
+      {
+        "id": "flow[2,4,D]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 5.0
+      },
+      {
+        "id": "flow[2,4,E]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 5.0
+      },
+      {
+        "id": "flow[3,5,A]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[3,5,B]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[3,5,C]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[3,5,D]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[3,5,E]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[3,6,A]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 6.0
+      },
+      {
+        "id": "flow[3,6,B]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 6.0
+      },
+      {
+        "id": "flow[3,6,C]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 6.0
+      },
+      {
+        "id": "flow[3,6,D]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 6.0
+      },
+      {
+        "id": "flow[3,6,E]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 6.0
+      },
+      {
+        "id": "flow[4,5,A]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[4,5,B]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[4,5,C]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[4,5,D]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[4,5,E]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[5,6,A]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[5,6,B]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[5,6,C]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[5,6,D]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[5,6,E]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "flow_conservation_node_2_product_A",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_conservation_node_2_product_B",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_conservation_node_2_product_C",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_conservation_node_2_product_D",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_conservation_node_2_product_E",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_conservation_node_3_product_A",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_conservation_node_3_product_B",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_conservation_node_3_product_C",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_conservation_node_3_product_D",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "flow_conservation_node_3_product_E",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "demand_satisfaction_node_4_product_A",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 3.0
+      },
+      {
+        "id": "demand_satisfaction_node_4_product_B",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 2.0
+      },
+      {
+        "id": "demand_satisfaction_node_4_product_C",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 3.0
+      },
+      {
+        "id": "no_demand_node_4_product_D",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "no_demand_node_4_product_E",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "no_demand_node_5_product_A",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "demand_satisfaction_node_5_product_B",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 4.0
+      },
+      {
+        "id": "no_demand_node_5_product_C",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "demand_satisfaction_node_5_product_D",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 5.0
+      },
+      {
+        "id": "demand_satisfaction_node_5_product_E",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 3.0
+      },
+      {
+        "id": "demand_satisfaction_node_6_product_A",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 2.0
+      },
+      {
+        "id": "no_demand_node_6_product_B",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "demand_satisfaction_node_6_product_C",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 3.0
+      },
+      {
+        "id": "no_demand_node_6_product_D",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "demand_satisfaction_node_6_product_E",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 5.0
+      },
+      {
+        "id": "arc_capacity_1_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 20.0
+      },
+      {
+        "id": "arc_capacity_1_3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 15.0
+      },
+      {
+        "id": "arc_capacity_2_3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 10.0
+      },
+      {
+        "id": "arc_capacity_2_4",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 12.0
+      },
+      {
+        "id": "arc_capacity_3_5",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 18.0
+      },
+      {
+        "id": "arc_capacity_3_6",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 10.0
+      },
+      {
+        "id": "arc_capacity_4_5",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 8.0
+      },
+      {
+        "id": "arc_capacity_5_6",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 15.0
+      },
+      {
+        "id": "source_supply_limit",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 30.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "min",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "flow_conservation_node_2_product_A",
+      "dst": "flow[1,2,A]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_A",
+      "dst": "flow[2,3,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_A",
+      "dst": "flow[2,4,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_B",
+      "dst": "flow[1,2,B]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_B",
+      "dst": "flow[2,3,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_B",
+      "dst": "flow[2,4,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_C",
+      "dst": "flow[1,2,C]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_C",
+      "dst": "flow[2,3,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_C",
+      "dst": "flow[2,4,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_D",
+      "dst": "flow[1,2,D]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_D",
+      "dst": "flow[2,3,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_D",
+      "dst": "flow[2,4,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_E",
+      "dst": "flow[1,2,E]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_E",
+      "dst": "flow[2,3,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_2_product_E",
+      "dst": "flow[2,4,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_A",
+      "dst": "flow[1,3,A]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_A",
+      "dst": "flow[2,3,A]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_A",
+      "dst": "flow[3,5,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_A",
+      "dst": "flow[3,6,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_B",
+      "dst": "flow[1,3,B]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_B",
+      "dst": "flow[2,3,B]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_B",
+      "dst": "flow[3,5,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_B",
+      "dst": "flow[3,6,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_C",
+      "dst": "flow[1,3,C]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_C",
+      "dst": "flow[2,3,C]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_C",
+      "dst": "flow[3,5,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_C",
+      "dst": "flow[3,6,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_D",
+      "dst": "flow[1,3,D]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_D",
+      "dst": "flow[2,3,D]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_D",
+      "dst": "flow[3,5,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_D",
+      "dst": "flow[3,6,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_E",
+      "dst": "flow[1,3,E]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_E",
+      "dst": "flow[2,3,E]",
+      "coef": -1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_E",
+      "dst": "flow[3,5,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "flow_conservation_node_3_product_E",
+      "dst": "flow[3,6,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_4_product_A",
+      "dst": "flow[2,4,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_4_product_A",
+      "dst": "flow[4,5,A]",
+      "coef": -1.0
+    },
+    {
+      "src": "demand_satisfaction_node_4_product_B",
+      "dst": "flow[2,4,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_4_product_B",
+      "dst": "flow[4,5,B]",
+      "coef": -1.0
+    },
+    {
+      "src": "demand_satisfaction_node_4_product_C",
+      "dst": "flow[2,4,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_4_product_C",
+      "dst": "flow[4,5,C]",
+      "coef": -1.0
+    },
+    {
+      "src": "no_demand_node_4_product_D",
+      "dst": "flow[2,4,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "no_demand_node_4_product_D",
+      "dst": "flow[4,5,D]",
+      "coef": -1.0
+    },
+    {
+      "src": "no_demand_node_4_product_E",
+      "dst": "flow[2,4,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "no_demand_node_4_product_E",
+      "dst": "flow[4,5,E]",
+      "coef": -1.0
+    },
+    {
+      "src": "no_demand_node_5_product_A",
+      "dst": "flow[3,5,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "no_demand_node_5_product_A",
+      "dst": "flow[4,5,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "no_demand_node_5_product_A",
+      "dst": "flow[5,6,A]",
+      "coef": -1.0
+    },
+    {
+      "src": "demand_satisfaction_node_5_product_B",
+      "dst": "flow[3,5,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_5_product_B",
+      "dst": "flow[4,5,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_5_product_B",
+      "dst": "flow[5,6,B]",
+      "coef": -1.0
+    },
+    {
+      "src": "no_demand_node_5_product_C",
+      "dst": "flow[3,5,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "no_demand_node_5_product_C",
+      "dst": "flow[4,5,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "no_demand_node_5_product_C",
+      "dst": "flow[5,6,C]",
+      "coef": -1.0
+    },
+    {
+      "src": "demand_satisfaction_node_5_product_D",
+      "dst": "flow[3,5,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_5_product_D",
+      "dst": "flow[4,5,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_5_product_D",
+      "dst": "flow[5,6,D]",
+      "coef": -1.0
+    },
+    {
+      "src": "demand_satisfaction_node_5_product_E",
+      "dst": "flow[3,5,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_5_product_E",
+      "dst": "flow[4,5,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_5_product_E",
+      "dst": "flow[5,6,E]",
+      "coef": -1.0
+    },
+    {
+      "src": "demand_satisfaction_node_6_product_A",
+      "dst": "flow[3,6,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_6_product_A",
+      "dst": "flow[5,6,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "no_demand_node_6_product_B",
+      "dst": "flow[3,6,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "no_demand_node_6_product_B",
+      "dst": "flow[5,6,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_6_product_C",
+      "dst": "flow[3,6,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_6_product_C",
+      "dst": "flow[5,6,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "no_demand_node_6_product_D",
+      "dst": "flow[3,6,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "no_demand_node_6_product_D",
+      "dst": "flow[5,6,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_6_product_E",
+      "dst": "flow[3,6,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "demand_satisfaction_node_6_product_E",
+      "dst": "flow[5,6,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_1_2",
+      "dst": "flow[1,2,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_1_2",
+      "dst": "flow[1,2,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_1_2",
+      "dst": "flow[1,2,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_1_2",
+      "dst": "flow[1,2,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_1_2",
+      "dst": "flow[1,2,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_1_3",
+      "dst": "flow[1,3,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_1_3",
+      "dst": "flow[1,3,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_1_3",
+      "dst": "flow[1,3,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_1_3",
+      "dst": "flow[1,3,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_1_3",
+      "dst": "flow[1,3,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_2_3",
+      "dst": "flow[2,3,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_2_3",
+      "dst": "flow[2,3,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_2_3",
+      "dst": "flow[2,3,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_2_3",
+      "dst": "flow[2,3,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_2_3",
+      "dst": "flow[2,3,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_2_4",
+      "dst": "flow[2,4,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_2_4",
+      "dst": "flow[2,4,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_2_4",
+      "dst": "flow[2,4,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_2_4",
+      "dst": "flow[2,4,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_2_4",
+      "dst": "flow[2,4,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_3_5",
+      "dst": "flow[3,5,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_3_5",
+      "dst": "flow[3,5,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_3_5",
+      "dst": "flow[3,5,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_3_5",
+      "dst": "flow[3,5,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_3_5",
+      "dst": "flow[3,5,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_3_6",
+      "dst": "flow[3,6,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_3_6",
+      "dst": "flow[3,6,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_3_6",
+      "dst": "flow[3,6,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_3_6",
+      "dst": "flow[3,6,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_3_6",
+      "dst": "flow[3,6,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_4_5",
+      "dst": "flow[4,5,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_4_5",
+      "dst": "flow[4,5,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_4_5",
+      "dst": "flow[4,5,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_4_5",
+      "dst": "flow[4,5,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_4_5",
+      "dst": "flow[4,5,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_5_6",
+      "dst": "flow[5,6,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_5_6",
+      "dst": "flow[5,6,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_5_6",
+      "dst": "flow[5,6,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_5_6",
+      "dst": "flow[5,6,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "arc_capacity_5_6",
+      "dst": "flow[5,6,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "source_supply_limit",
+      "dst": "flow[1,2,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "source_supply_limit",
+      "dst": "flow[1,2,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "source_supply_limit",
+      "dst": "flow[1,2,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "source_supply_limit",
+      "dst": "flow[1,2,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "source_supply_limit",
+      "dst": "flow[1,2,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "source_supply_limit",
+      "dst": "flow[1,3,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "source_supply_limit",
+      "dst": "flow[1,3,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "source_supply_limit",
+      "dst": "flow[1,3,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "source_supply_limit",
+      "dst": "flow[1,3,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "source_supply_limit",
+      "dst": "flow[1,3,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[1,2,A]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[1,2,B]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[1,2,C]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[1,2,D]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[1,2,E]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[1,3,A]",
+      "coef": 4.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[1,3,B]",
+      "coef": 4.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[1,3,C]",
+      "coef": 4.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[1,3,D]",
+      "coef": 4.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[1,3,E]",
+      "coef": 4.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[2,3,A]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[2,3,B]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[2,3,C]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[2,3,D]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[2,3,E]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[2,4,A]",
+      "coef": 5.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[2,4,B]",
+      "coef": 5.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[2,4,C]",
+      "coef": 5.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[2,4,D]",
+      "coef": 5.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[2,4,E]",
+      "coef": 5.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[3,5,A]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[3,5,B]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[3,5,C]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[3,5,D]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[3,5,E]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[3,6,A]",
+      "coef": 6.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[3,6,B]",
+      "coef": 6.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[3,6,C]",
+      "coef": 6.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[3,6,D]",
+      "coef": 6.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[3,6,E]",
+      "coef": 6.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[4,5,A]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[4,5,B]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[4,5,C]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[4,5,D]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[4,5,E]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[5,6,A]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[5,6,B]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[5,6,C]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[5,6,D]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[5,6,E]",
+      "coef": 2.0
+    }
+  ]
+}

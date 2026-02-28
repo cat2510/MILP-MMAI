@@ -1,0 +1,1023 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_064.mps",
+    "num_vars": 30,
+    "num_constrs": 37,
+    "num_edges": 108,
+    "model_sense": "min",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "flow[P1,N1,Cola]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[P1,N1,Juice]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[P1,N1,Water]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[P1,N2,Cola]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[P1,N2,Juice]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[P1,N2,Water]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[P2,N3,Cola]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[P2,N3,Juice]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[P2,N3,Water]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[N1,N3,Cola]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[N1,N3,Juice]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[N1,N3,Water]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[N2,N4,Cola]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[N2,N4,Juice]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[N2,N4,Water]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[N3,N5,Cola]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[N3,N5,Juice]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[N3,N5,Water]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.0
+      },
+      {
+        "id": "flow[N4,S1,Cola]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[N4,S1,Juice]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[N4,S1,Water]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[N4,S2,Cola]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[N4,S2,Juice]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[N4,S2,Water]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[N5,S2,Cola]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[N5,S2,Juice]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[N5,S2,Water]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1.0
+      },
+      {
+        "id": "flow[N5,S3,Cola]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[N5,S3,Juice]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      },
+      {
+        "id": "flow[N5,S3,Water]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 2.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "R0",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 40.0
+      },
+      {
+        "id": "R1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 30.0
+      },
+      {
+        "id": "R2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 20.0
+      },
+      {
+        "id": "R3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 30.0
+      },
+      {
+        "id": "R4",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 25.0
+      },
+      {
+        "id": "R5",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 40.0
+      },
+      {
+        "id": "R6",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R7",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R8",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R9",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R10",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R11",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R12",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R13",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R14",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R15",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R16",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R17",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R18",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R19",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R20",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "R21",
+        "type": "constr",
+        "sense": "=",
+        "rhs": -30.0
+      },
+      {
+        "id": "R22",
+        "type": "constr",
+        "sense": "=",
+        "rhs": -15.0
+      },
+      {
+        "id": "R23",
+        "type": "constr",
+        "sense": "=",
+        "rhs": -10.0
+      },
+      {
+        "id": "R24",
+        "type": "constr",
+        "sense": "=",
+        "rhs": -20.0
+      },
+      {
+        "id": "R25",
+        "type": "constr",
+        "sense": "=",
+        "rhs": -25.0
+      },
+      {
+        "id": "R26",
+        "type": "constr",
+        "sense": "=",
+        "rhs": -15.0
+      },
+      {
+        "id": "R27",
+        "type": "constr",
+        "sense": "=",
+        "rhs": -10.0
+      },
+      {
+        "id": "R28",
+        "type": "constr",
+        "sense": "=",
+        "rhs": -5.0
+      },
+      {
+        "id": "R29",
+        "type": "constr",
+        "sense": "=",
+        "rhs": -20.0
+      },
+      {
+        "id": "R30",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 80.0
+      },
+      {
+        "id": "R31",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 60.0
+      },
+      {
+        "id": "R32",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 90.0
+      },
+      {
+        "id": "R33",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 50.0
+      },
+      {
+        "id": "R34",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 70.0
+      },
+      {
+        "id": "R35",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 100.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "min",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "R0",
+      "dst": "flow[P1,N1,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R0",
+      "dst": "flow[P1,N2,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R1",
+      "dst": "flow[P1,N1,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R1",
+      "dst": "flow[P1,N2,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R2",
+      "dst": "flow[P1,N1,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R2",
+      "dst": "flow[P1,N2,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R3",
+      "dst": "flow[P2,N3,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R4",
+      "dst": "flow[P2,N3,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R5",
+      "dst": "flow[P2,N3,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R6",
+      "dst": "flow[P1,N1,Cola]",
+      "coef": -1.0
+    },
+    {
+      "src": "R6",
+      "dst": "flow[N1,N3,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R7",
+      "dst": "flow[P1,N1,Juice]",
+      "coef": -1.0
+    },
+    {
+      "src": "R7",
+      "dst": "flow[N1,N3,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R8",
+      "dst": "flow[P1,N1,Water]",
+      "coef": -1.0
+    },
+    {
+      "src": "R8",
+      "dst": "flow[N1,N3,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R9",
+      "dst": "flow[P1,N2,Cola]",
+      "coef": -1.0
+    },
+    {
+      "src": "R9",
+      "dst": "flow[N2,N4,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R10",
+      "dst": "flow[P1,N2,Juice]",
+      "coef": -1.0
+    },
+    {
+      "src": "R10",
+      "dst": "flow[N2,N4,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R11",
+      "dst": "flow[P1,N2,Water]",
+      "coef": -1.0
+    },
+    {
+      "src": "R11",
+      "dst": "flow[N2,N4,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R12",
+      "dst": "flow[P2,N3,Cola]",
+      "coef": -1.0
+    },
+    {
+      "src": "R12",
+      "dst": "flow[N1,N3,Cola]",
+      "coef": -1.0
+    },
+    {
+      "src": "R12",
+      "dst": "flow[N3,N5,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R13",
+      "dst": "flow[P2,N3,Juice]",
+      "coef": -1.0
+    },
+    {
+      "src": "R13",
+      "dst": "flow[N1,N3,Juice]",
+      "coef": -1.0
+    },
+    {
+      "src": "R13",
+      "dst": "flow[N3,N5,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R14",
+      "dst": "flow[P2,N3,Water]",
+      "coef": -1.0
+    },
+    {
+      "src": "R14",
+      "dst": "flow[N1,N3,Water]",
+      "coef": -1.0
+    },
+    {
+      "src": "R14",
+      "dst": "flow[N3,N5,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R15",
+      "dst": "flow[N2,N4,Cola]",
+      "coef": -1.0
+    },
+    {
+      "src": "R15",
+      "dst": "flow[N4,S1,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R15",
+      "dst": "flow[N4,S2,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "flow[N2,N4,Juice]",
+      "coef": -1.0
+    },
+    {
+      "src": "R16",
+      "dst": "flow[N4,S1,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "flow[N4,S2,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R17",
+      "dst": "flow[N2,N4,Water]",
+      "coef": -1.0
+    },
+    {
+      "src": "R17",
+      "dst": "flow[N4,S1,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R17",
+      "dst": "flow[N4,S2,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R18",
+      "dst": "flow[N3,N5,Cola]",
+      "coef": -1.0
+    },
+    {
+      "src": "R18",
+      "dst": "flow[N5,S2,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R18",
+      "dst": "flow[N5,S3,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R19",
+      "dst": "flow[N3,N5,Juice]",
+      "coef": -1.0
+    },
+    {
+      "src": "R19",
+      "dst": "flow[N5,S2,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R19",
+      "dst": "flow[N5,S3,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R20",
+      "dst": "flow[N3,N5,Water]",
+      "coef": -1.0
+    },
+    {
+      "src": "R20",
+      "dst": "flow[N5,S2,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R20",
+      "dst": "flow[N5,S3,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R21",
+      "dst": "flow[N4,S1,Cola]",
+      "coef": -1.0
+    },
+    {
+      "src": "R22",
+      "dst": "flow[N4,S1,Juice]",
+      "coef": -1.0
+    },
+    {
+      "src": "R23",
+      "dst": "flow[N4,S1,Water]",
+      "coef": -1.0
+    },
+    {
+      "src": "R24",
+      "dst": "flow[N4,S2,Cola]",
+      "coef": -1.0
+    },
+    {
+      "src": "R24",
+      "dst": "flow[N5,S2,Cola]",
+      "coef": -1.0
+    },
+    {
+      "src": "R25",
+      "dst": "flow[N4,S2,Juice]",
+      "coef": -1.0
+    },
+    {
+      "src": "R25",
+      "dst": "flow[N5,S2,Juice]",
+      "coef": -1.0
+    },
+    {
+      "src": "R26",
+      "dst": "flow[N4,S2,Water]",
+      "coef": -1.0
+    },
+    {
+      "src": "R26",
+      "dst": "flow[N5,S2,Water]",
+      "coef": -1.0
+    },
+    {
+      "src": "R27",
+      "dst": "flow[N5,S3,Cola]",
+      "coef": -1.0
+    },
+    {
+      "src": "R28",
+      "dst": "flow[N5,S3,Juice]",
+      "coef": -1.0
+    },
+    {
+      "src": "R29",
+      "dst": "flow[N5,S3,Water]",
+      "coef": -1.0
+    },
+    {
+      "src": "R30",
+      "dst": "flow[P1,N1,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R30",
+      "dst": "flow[P1,N1,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R30",
+      "dst": "flow[P1,N1,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R31",
+      "dst": "flow[P1,N2,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R31",
+      "dst": "flow[P1,N2,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R31",
+      "dst": "flow[P1,N2,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R32",
+      "dst": "flow[P2,N3,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R32",
+      "dst": "flow[P2,N3,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R32",
+      "dst": "flow[P2,N3,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "flow[N1,N3,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "flow[N1,N3,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "flow[N1,N3,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R34",
+      "dst": "flow[N2,N4,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R34",
+      "dst": "flow[N2,N4,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R34",
+      "dst": "flow[N2,N4,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "R35",
+      "dst": "flow[N3,N5,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "R35",
+      "dst": "flow[N3,N5,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "R35",
+      "dst": "flow[N3,N5,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[P1,N1,Cola]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[P1,N1,Juice]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[P1,N1,Water]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[P1,N2,Cola]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[P1,N2,Juice]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[P1,N2,Water]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[P2,N3,Cola]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[P2,N3,Juice]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[P2,N3,Water]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N1,N3,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N1,N3,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N1,N3,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N2,N4,Cola]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N2,N4,Juice]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N2,N4,Water]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N3,N5,Cola]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N3,N5,Juice]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N3,N5,Water]",
+      "coef": 3.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N4,S1,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N4,S1,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N4,S1,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N4,S2,Cola]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N4,S2,Juice]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N4,S2,Water]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N5,S2,Cola]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N5,S2,Juice]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N5,S2,Water]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N5,S3,Cola]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N5,S3,Juice]",
+      "coef": 2.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "flow[N5,S3,Water]",
+      "coef": 2.0
+    }
+  ]
+}

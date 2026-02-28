@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_049.mps",
+    "num_vars": 5,
+    "num_constrs": 4,
+    "num_edges": 10,
+    "model_sense": "min",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "DistanceBetweenSortingAndStorage",
+        "type": "var",
+        "vtype": "C",
+        "lb": 100.0,
+        "ub": null,
+        "obj": 40.0
+      },
+      {
+        "id": "DistanceBetweenSortingAndPackaging",
+        "type": "var",
+        "vtype": "C",
+        "lb": 100.0,
+        "ub": null,
+        "obj": 15.0
+      },
+      {
+        "id": "DistanceBetweenSortingAndLoading",
+        "type": "var",
+        "vtype": "C",
+        "lb": 100.0,
+        "ub": null,
+        "obj": 25.0
+      },
+      {
+        "id": "DistanceBetweenStorageAndPackaging",
+        "type": "var",
+        "vtype": "C",
+        "lb": 100.0,
+        "ub": null,
+        "obj": 10.0
+      },
+      {
+        "id": "DistanceBetweenStorageAndLoading",
+        "type": "var",
+        "vtype": "C",
+        "lb": 100.0,
+        "ub": null,
+        "obj": 30.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "Collinearity_Sorting",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1400.0
+      },
+      {
+        "id": "Collinearity_Storage",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1400.0
+      },
+      {
+        "id": "MaxDist_SortingStorage",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 1400.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "min",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "Collinearity_Sorting",
+      "dst": "DistanceBetweenSortingAndPackaging",
+      "coef": 1.0
+    },
+    {
+      "src": "Collinearity_Sorting",
+      "dst": "DistanceBetweenSortingAndLoading",
+      "coef": 1.0
+    },
+    {
+      "src": "Collinearity_Storage",
+      "dst": "DistanceBetweenStorageAndPackaging",
+      "coef": 1.0
+    },
+    {
+      "src": "Collinearity_Storage",
+      "dst": "DistanceBetweenStorageAndLoading",
+      "coef": 1.0
+    },
+    {
+      "src": "MaxDist_SortingStorage",
+      "dst": "DistanceBetweenSortingAndStorage",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "DistanceBetweenSortingAndStorage",
+      "coef": 40.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "DistanceBetweenSortingAndPackaging",
+      "coef": 15.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "DistanceBetweenSortingAndLoading",
+      "coef": 25.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "DistanceBetweenStorageAndPackaging",
+      "coef": 10.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "DistanceBetweenStorageAndLoading",
+      "coef": 30.0
+    }
+  ]
+}

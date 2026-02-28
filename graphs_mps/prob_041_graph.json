@@ -1,0 +1,431 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_041.mps",
+    "num_vars": 14,
+    "num_constrs": 13,
+    "num_edges": 44,
+    "model_sense": "max",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "ProductionCapacityAdded[0]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": -1000.0
+      },
+      {
+        "id": "ProductionCapacityAdded[1]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": -1500.0
+      },
+      {
+        "id": "ProductionFromBrewery2Hub[0,0,0]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 500.0
+      },
+      {
+        "id": "ProductionFromBrewery2Hub[0,0,1]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 500.0
+      },
+      {
+        "id": "ProductionFromBrewery2Hub[0,0,2]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 500.0
+      },
+      {
+        "id": "ProductionFromBrewery2Hub[0,1,0]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 450.0
+      },
+      {
+        "id": "ProductionFromBrewery2Hub[0,1,1]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 450.0
+      },
+      {
+        "id": "ProductionFromBrewery2Hub[0,1,2]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 450.0
+      },
+      {
+        "id": "ProductionFromBrewery2Hub[1,0,0]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 480.0
+      },
+      {
+        "id": "ProductionFromBrewery2Hub[1,0,1]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 480.0
+      },
+      {
+        "id": "ProductionFromBrewery2Hub[1,0,2]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 480.0
+      },
+      {
+        "id": "ProductionFromBrewery2Hub[1,1,0]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 520.0
+      },
+      {
+        "id": "ProductionFromBrewery2Hub[1,1,1]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 520.0
+      },
+      {
+        "id": "ProductionFromBrewery2Hub[1,1,2]",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 520.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "ProductionCapacity_B1_Y1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 200.0
+      },
+      {
+        "id": "ProductionCapacity_B1_Y2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 200.0
+      },
+      {
+        "id": "ProductionCapacity_B1_Y3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 200.0
+      },
+      {
+        "id": "ProductionCapacity_B2_Y1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 300.0
+      },
+      {
+        "id": "ProductionCapacity_B2_Y2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 300.0
+      },
+      {
+        "id": "ProductionCapacity_B2_Y3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 300.0
+      },
+      {
+        "id": "ShippingCapacity_H1_Y1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 400.0
+      },
+      {
+        "id": "ShippingCapacity_H1_Y2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 400.0
+      },
+      {
+        "id": "ShippingCapacity_H1_Y3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 400.0
+      },
+      {
+        "id": "ShippingCapacity_H2_Y1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 400.0
+      },
+      {
+        "id": "ShippingCapacity_H2_Y2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 400.0
+      },
+      {
+        "id": "ShippingCapacity_H2_Y3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 400.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "max",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "ProductionCapacity_B1_Y1",
+      "dst": "ProductionCapacityAdded[0]",
+      "coef": -1.0
+    },
+    {
+      "src": "ProductionCapacity_B1_Y1",
+      "dst": "ProductionFromBrewery2Hub[0,0,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "ProductionCapacity_B1_Y1",
+      "dst": "ProductionFromBrewery2Hub[0,1,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "ProductionCapacity_B1_Y2",
+      "dst": "ProductionCapacityAdded[0]",
+      "coef": -1.0
+    },
+    {
+      "src": "ProductionCapacity_B1_Y2",
+      "dst": "ProductionFromBrewery2Hub[0,0,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "ProductionCapacity_B1_Y2",
+      "dst": "ProductionFromBrewery2Hub[0,1,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "ProductionCapacity_B1_Y3",
+      "dst": "ProductionCapacityAdded[0]",
+      "coef": -1.0
+    },
+    {
+      "src": "ProductionCapacity_B1_Y3",
+      "dst": "ProductionFromBrewery2Hub[0,0,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "ProductionCapacity_B1_Y3",
+      "dst": "ProductionFromBrewery2Hub[0,1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "ProductionCapacity_B2_Y1",
+      "dst": "ProductionCapacityAdded[1]",
+      "coef": -1.0
+    },
+    {
+      "src": "ProductionCapacity_B2_Y1",
+      "dst": "ProductionFromBrewery2Hub[1,0,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "ProductionCapacity_B2_Y1",
+      "dst": "ProductionFromBrewery2Hub[1,1,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "ProductionCapacity_B2_Y2",
+      "dst": "ProductionCapacityAdded[1]",
+      "coef": -1.0
+    },
+    {
+      "src": "ProductionCapacity_B2_Y2",
+      "dst": "ProductionFromBrewery2Hub[1,0,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "ProductionCapacity_B2_Y2",
+      "dst": "ProductionFromBrewery2Hub[1,1,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "ProductionCapacity_B2_Y3",
+      "dst": "ProductionCapacityAdded[1]",
+      "coef": -1.0
+    },
+    {
+      "src": "ProductionCapacity_B2_Y3",
+      "dst": "ProductionFromBrewery2Hub[1,0,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "ProductionCapacity_B2_Y3",
+      "dst": "ProductionFromBrewery2Hub[1,1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "ShippingCapacity_H1_Y1",
+      "dst": "ProductionFromBrewery2Hub[0,0,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "ShippingCapacity_H1_Y1",
+      "dst": "ProductionFromBrewery2Hub[1,0,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "ShippingCapacity_H1_Y2",
+      "dst": "ProductionFromBrewery2Hub[0,0,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "ShippingCapacity_H1_Y2",
+      "dst": "ProductionFromBrewery2Hub[1,0,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "ShippingCapacity_H1_Y3",
+      "dst": "ProductionFromBrewery2Hub[0,0,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "ShippingCapacity_H1_Y3",
+      "dst": "ProductionFromBrewery2Hub[1,0,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "ShippingCapacity_H2_Y1",
+      "dst": "ProductionFromBrewery2Hub[0,1,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "ShippingCapacity_H2_Y1",
+      "dst": "ProductionFromBrewery2Hub[1,1,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "ShippingCapacity_H2_Y2",
+      "dst": "ProductionFromBrewery2Hub[0,1,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "ShippingCapacity_H2_Y2",
+      "dst": "ProductionFromBrewery2Hub[1,1,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "ShippingCapacity_H2_Y3",
+      "dst": "ProductionFromBrewery2Hub[0,1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "ShippingCapacity_H2_Y3",
+      "dst": "ProductionFromBrewery2Hub[1,1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionCapacityAdded[0]",
+      "coef": -1000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionCapacityAdded[1]",
+      "coef": -1500.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionFromBrewery2Hub[0,0,0]",
+      "coef": 500.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionFromBrewery2Hub[0,0,1]",
+      "coef": 500.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionFromBrewery2Hub[0,0,2]",
+      "coef": 500.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionFromBrewery2Hub[0,1,0]",
+      "coef": 450.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionFromBrewery2Hub[0,1,1]",
+      "coef": 450.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionFromBrewery2Hub[0,1,2]",
+      "coef": 450.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionFromBrewery2Hub[1,0,0]",
+      "coef": 480.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionFromBrewery2Hub[1,0,1]",
+      "coef": 480.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionFromBrewery2Hub[1,0,2]",
+      "coef": 480.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionFromBrewery2Hub[1,1,0]",
+      "coef": 520.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionFromBrewery2Hub[1,1,1]",
+      "coef": 520.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductionFromBrewery2Hub[1,1,2]",
+      "coef": 520.0
+    }
+  ]
+}

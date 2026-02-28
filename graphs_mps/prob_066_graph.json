@@ -1,0 +1,2202 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_066.mps",
+    "num_vars": 48,
+    "num_constrs": 67,
+    "num_edges": 279,
+    "model_sense": "min",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "center_operation[A]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 2500.0
+      },
+      {
+        "id": "center_operation[B]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 2000.0
+      },
+      {
+        "id": "center_operation[C]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1800.0
+      },
+      {
+        "id": "assignment[A,1]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1020.0
+      },
+      {
+        "id": "assignment[A,2]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1005.0
+      },
+      {
+        "id": "assignment[A,3]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1840.0
+      },
+      {
+        "id": "assignment[A,4]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1014.0
+      },
+      {
+        "id": "assignment[A,5]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1785.0
+      },
+      {
+        "id": "assignment[A,6]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1400.0
+      },
+      {
+        "id": "assignment[A,7]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1680.0
+      },
+      {
+        "id": "assignment[A,8]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1168.0
+      },
+      {
+        "id": "assignment[A,9]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1691.0
+      },
+      {
+        "id": "assignment[A,10]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1045.0
+      },
+      {
+        "id": "assignment[A,11]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1426.0
+      },
+      {
+        "id": "assignment[A,12]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1512.0
+      },
+      {
+        "id": "assignment[A,13]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1596.0
+      },
+      {
+        "id": "assignment[A,14]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1080.0
+      },
+      {
+        "id": "assignment[A,15]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1276.0
+      },
+      {
+        "id": "assignment[B,1]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1530.0
+      },
+      {
+        "id": "assignment[B,2]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 737.0
+      },
+      {
+        "id": "assignment[B,3]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1288.0
+      },
+      {
+        "id": "assignment[B,4]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1482.0
+      },
+      {
+        "id": "assignment[B,5]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1260.0
+      },
+      {
+        "id": "assignment[B,6]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 896.0
+      },
+      {
+        "id": "assignment[B,7]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 2520.0
+      },
+      {
+        "id": "assignment[B,8]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 949.0
+      },
+      {
+        "id": "assignment[B,9]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1335.0
+      },
+      {
+        "id": "assignment[B,10]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 2090.0
+      },
+      {
+        "id": "assignment[B,11]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1054.0
+      },
+      {
+        "id": "assignment[B,12]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1176.0
+      },
+      {
+        "id": "assignment[B,13]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1520.0
+      },
+      {
+        "id": "assignment[B,14]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1125.0
+      },
+      {
+        "id": "assignment[B,15]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1334.0
+      },
+      {
+        "id": "assignment[C,1]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1870.0
+      },
+      {
+        "id": "assignment[C,2]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1675.0
+      },
+      {
+        "id": "assignment[C,3]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1472.0
+      },
+      {
+        "id": "assignment[C,4]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1794.0
+      },
+      {
+        "id": "assignment[C,5]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 2100.0
+      },
+      {
+        "id": "assignment[C,6]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 784.0
+      },
+      {
+        "id": "assignment[C,7]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 2160.0
+      },
+      {
+        "id": "assignment[C,8]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1752.0
+      },
+      {
+        "id": "assignment[C,9]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1513.0
+      },
+      {
+        "id": "assignment[C,10]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1805.0
+      },
+      {
+        "id": "assignment[C,11]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 930.0
+      },
+      {
+        "id": "assignment[C,12]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 1764.0
+      },
+      {
+        "id": "assignment[C,13]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 988.0
+      },
+      {
+        "id": "assignment[C,14]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 720.0
+      },
+      {
+        "id": "assignment[C,15]",
+        "type": "var",
+        "vtype": "B",
+        "lb": 0.0,
+        "ub": 1.0,
+        "obj": 696.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "R0",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R1",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R2",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R3",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R4",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R5",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R6",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R7",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R8",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R9",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R10",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R11",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R12",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R13",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R14",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 1.0
+      },
+      {
+        "id": "R15",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R16",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R17",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R18",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R19",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R20",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R21",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R22",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R23",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R24",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R25",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R26",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R27",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R28",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R29",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R30",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R31",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R32",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R33",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R34",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R35",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R36",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R37",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R38",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R39",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R40",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R41",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R42",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R43",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R44",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R45",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R46",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R47",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R48",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R49",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R50",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R51",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R52",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R53",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R54",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R55",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R56",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R57",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R58",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R59",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R60",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R61",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R62",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R63",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R64",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "R65",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "min",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "R0",
+      "dst": "assignment[A,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "R0",
+      "dst": "assignment[B,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "R0",
+      "dst": "assignment[C,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "R1",
+      "dst": "assignment[A,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "R1",
+      "dst": "assignment[B,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "R1",
+      "dst": "assignment[C,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "R2",
+      "dst": "assignment[A,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "R2",
+      "dst": "assignment[B,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "R2",
+      "dst": "assignment[C,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "R3",
+      "dst": "assignment[A,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "R3",
+      "dst": "assignment[B,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "R3",
+      "dst": "assignment[C,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "R4",
+      "dst": "assignment[A,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "R4",
+      "dst": "assignment[B,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "R4",
+      "dst": "assignment[C,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "R5",
+      "dst": "assignment[A,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "R5",
+      "dst": "assignment[B,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "R5",
+      "dst": "assignment[C,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "R6",
+      "dst": "assignment[A,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "R6",
+      "dst": "assignment[B,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "R6",
+      "dst": "assignment[C,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "R7",
+      "dst": "assignment[A,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "R7",
+      "dst": "assignment[B,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "R7",
+      "dst": "assignment[C,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "R8",
+      "dst": "assignment[A,9]",
+      "coef": 1.0
+    },
+    {
+      "src": "R8",
+      "dst": "assignment[B,9]",
+      "coef": 1.0
+    },
+    {
+      "src": "R8",
+      "dst": "assignment[C,9]",
+      "coef": 1.0
+    },
+    {
+      "src": "R9",
+      "dst": "assignment[A,10]",
+      "coef": 1.0
+    },
+    {
+      "src": "R9",
+      "dst": "assignment[B,10]",
+      "coef": 1.0
+    },
+    {
+      "src": "R9",
+      "dst": "assignment[C,10]",
+      "coef": 1.0
+    },
+    {
+      "src": "R10",
+      "dst": "assignment[A,11]",
+      "coef": 1.0
+    },
+    {
+      "src": "R10",
+      "dst": "assignment[B,11]",
+      "coef": 1.0
+    },
+    {
+      "src": "R10",
+      "dst": "assignment[C,11]",
+      "coef": 1.0
+    },
+    {
+      "src": "R11",
+      "dst": "assignment[A,12]",
+      "coef": 1.0
+    },
+    {
+      "src": "R11",
+      "dst": "assignment[B,12]",
+      "coef": 1.0
+    },
+    {
+      "src": "R11",
+      "dst": "assignment[C,12]",
+      "coef": 1.0
+    },
+    {
+      "src": "R12",
+      "dst": "assignment[A,13]",
+      "coef": 1.0
+    },
+    {
+      "src": "R12",
+      "dst": "assignment[B,13]",
+      "coef": 1.0
+    },
+    {
+      "src": "R12",
+      "dst": "assignment[C,13]",
+      "coef": 1.0
+    },
+    {
+      "src": "R13",
+      "dst": "assignment[A,14]",
+      "coef": 1.0
+    },
+    {
+      "src": "R13",
+      "dst": "assignment[B,14]",
+      "coef": 1.0
+    },
+    {
+      "src": "R13",
+      "dst": "assignment[C,14]",
+      "coef": 1.0
+    },
+    {
+      "src": "R14",
+      "dst": "assignment[A,15]",
+      "coef": 1.0
+    },
+    {
+      "src": "R14",
+      "dst": "assignment[B,15]",
+      "coef": 1.0
+    },
+    {
+      "src": "R14",
+      "dst": "assignment[C,15]",
+      "coef": 1.0
+    },
+    {
+      "src": "R15",
+      "dst": "center_operation[A]",
+      "coef": -800.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,1]",
+      "coef": 85.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,2]",
+      "coef": 67.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,3]",
+      "coef": 92.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,4]",
+      "coef": 78.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,5]",
+      "coef": 105.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,6]",
+      "coef": 56.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,7]",
+      "coef": 120.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,8]",
+      "coef": 73.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,9]",
+      "coef": 89.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,10]",
+      "coef": 95.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,11]",
+      "coef": 62.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,12]",
+      "coef": 84.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,13]",
+      "coef": 76.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,14]",
+      "coef": 45.0
+    },
+    {
+      "src": "R15",
+      "dst": "assignment[A,15]",
+      "coef": 58.0
+    },
+    {
+      "src": "R16",
+      "dst": "center_operation[A]",
+      "coef": -7.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,9]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,10]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,11]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,12]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,13]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,14]",
+      "coef": 1.0
+    },
+    {
+      "src": "R16",
+      "dst": "assignment[A,15]",
+      "coef": 1.0
+    },
+    {
+      "src": "R17",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R17",
+      "dst": "assignment[A,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "R18",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R18",
+      "dst": "assignment[A,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "R19",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R19",
+      "dst": "assignment[A,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "R20",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R20",
+      "dst": "assignment[A,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "R21",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R21",
+      "dst": "assignment[A,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "R22",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R22",
+      "dst": "assignment[A,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "R23",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R23",
+      "dst": "assignment[A,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "R24",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R24",
+      "dst": "assignment[A,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "R25",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R25",
+      "dst": "assignment[A,9]",
+      "coef": 1.0
+    },
+    {
+      "src": "R26",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R26",
+      "dst": "assignment[A,10]",
+      "coef": 1.0
+    },
+    {
+      "src": "R27",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R27",
+      "dst": "assignment[A,11]",
+      "coef": 1.0
+    },
+    {
+      "src": "R28",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R28",
+      "dst": "assignment[A,12]",
+      "coef": 1.0
+    },
+    {
+      "src": "R29",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R29",
+      "dst": "assignment[A,13]",
+      "coef": 1.0
+    },
+    {
+      "src": "R30",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R30",
+      "dst": "assignment[A,14]",
+      "coef": 1.0
+    },
+    {
+      "src": "R31",
+      "dst": "center_operation[A]",
+      "coef": -1.0
+    },
+    {
+      "src": "R31",
+      "dst": "assignment[A,15]",
+      "coef": 1.0
+    },
+    {
+      "src": "R32",
+      "dst": "center_operation[B]",
+      "coef": -600.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,1]",
+      "coef": 85.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,2]",
+      "coef": 67.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,3]",
+      "coef": 92.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,4]",
+      "coef": 78.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,5]",
+      "coef": 105.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,6]",
+      "coef": 56.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,7]",
+      "coef": 120.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,8]",
+      "coef": 73.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,9]",
+      "coef": 89.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,10]",
+      "coef": 95.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,11]",
+      "coef": 62.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,12]",
+      "coef": 84.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,13]",
+      "coef": 76.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,14]",
+      "coef": 45.0
+    },
+    {
+      "src": "R32",
+      "dst": "assignment[B,15]",
+      "coef": 58.0
+    },
+    {
+      "src": "R33",
+      "dst": "center_operation[B]",
+      "coef": -6.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,9]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,10]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,11]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,12]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,13]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,14]",
+      "coef": 1.0
+    },
+    {
+      "src": "R33",
+      "dst": "assignment[B,15]",
+      "coef": 1.0
+    },
+    {
+      "src": "R34",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R34",
+      "dst": "assignment[B,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "R35",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R35",
+      "dst": "assignment[B,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "R36",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R36",
+      "dst": "assignment[B,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "R37",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R37",
+      "dst": "assignment[B,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "R38",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R38",
+      "dst": "assignment[B,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "R39",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R39",
+      "dst": "assignment[B,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "R40",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R40",
+      "dst": "assignment[B,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "R41",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R41",
+      "dst": "assignment[B,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "R42",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R42",
+      "dst": "assignment[B,9]",
+      "coef": 1.0
+    },
+    {
+      "src": "R43",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R43",
+      "dst": "assignment[B,10]",
+      "coef": 1.0
+    },
+    {
+      "src": "R44",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R44",
+      "dst": "assignment[B,11]",
+      "coef": 1.0
+    },
+    {
+      "src": "R45",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R45",
+      "dst": "assignment[B,12]",
+      "coef": 1.0
+    },
+    {
+      "src": "R46",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R46",
+      "dst": "assignment[B,13]",
+      "coef": 1.0
+    },
+    {
+      "src": "R47",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R47",
+      "dst": "assignment[B,14]",
+      "coef": 1.0
+    },
+    {
+      "src": "R48",
+      "dst": "center_operation[B]",
+      "coef": -1.0
+    },
+    {
+      "src": "R48",
+      "dst": "assignment[B,15]",
+      "coef": 1.0
+    },
+    {
+      "src": "R49",
+      "dst": "center_operation[C]",
+      "coef": -500.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,1]",
+      "coef": 85.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,2]",
+      "coef": 67.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,3]",
+      "coef": 92.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,4]",
+      "coef": 78.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,5]",
+      "coef": 105.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,6]",
+      "coef": 56.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,7]",
+      "coef": 120.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,8]",
+      "coef": 73.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,9]",
+      "coef": 89.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,10]",
+      "coef": 95.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,11]",
+      "coef": 62.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,12]",
+      "coef": 84.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,13]",
+      "coef": 76.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,14]",
+      "coef": 45.0
+    },
+    {
+      "src": "R49",
+      "dst": "assignment[C,15]",
+      "coef": 58.0
+    },
+    {
+      "src": "R50",
+      "dst": "center_operation[C]",
+      "coef": -5.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,9]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,10]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,11]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,12]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,13]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,14]",
+      "coef": 1.0
+    },
+    {
+      "src": "R50",
+      "dst": "assignment[C,15]",
+      "coef": 1.0
+    },
+    {
+      "src": "R51",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R51",
+      "dst": "assignment[C,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "R52",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R52",
+      "dst": "assignment[C,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "R53",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R53",
+      "dst": "assignment[C,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "R54",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R54",
+      "dst": "assignment[C,4]",
+      "coef": 1.0
+    },
+    {
+      "src": "R55",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R55",
+      "dst": "assignment[C,5]",
+      "coef": 1.0
+    },
+    {
+      "src": "R56",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R56",
+      "dst": "assignment[C,6]",
+      "coef": 1.0
+    },
+    {
+      "src": "R57",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R57",
+      "dst": "assignment[C,7]",
+      "coef": 1.0
+    },
+    {
+      "src": "R58",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R58",
+      "dst": "assignment[C,8]",
+      "coef": 1.0
+    },
+    {
+      "src": "R59",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R59",
+      "dst": "assignment[C,9]",
+      "coef": 1.0
+    },
+    {
+      "src": "R60",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R60",
+      "dst": "assignment[C,10]",
+      "coef": 1.0
+    },
+    {
+      "src": "R61",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R61",
+      "dst": "assignment[C,11]",
+      "coef": 1.0
+    },
+    {
+      "src": "R62",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R62",
+      "dst": "assignment[C,12]",
+      "coef": 1.0
+    },
+    {
+      "src": "R63",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R63",
+      "dst": "assignment[C,13]",
+      "coef": 1.0
+    },
+    {
+      "src": "R64",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R64",
+      "dst": "assignment[C,14]",
+      "coef": 1.0
+    },
+    {
+      "src": "R65",
+      "dst": "center_operation[C]",
+      "coef": -1.0
+    },
+    {
+      "src": "R65",
+      "dst": "assignment[C,15]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "center_operation[A]",
+      "coef": 2500.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "center_operation[B]",
+      "coef": 2000.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "center_operation[C]",
+      "coef": 1800.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,1]",
+      "coef": 1020.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,2]",
+      "coef": 1005.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,3]",
+      "coef": 1840.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,4]",
+      "coef": 1014.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,5]",
+      "coef": 1785.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,6]",
+      "coef": 1400.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,7]",
+      "coef": 1680.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,8]",
+      "coef": 1168.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,9]",
+      "coef": 1691.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,10]",
+      "coef": 1045.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,11]",
+      "coef": 1426.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,12]",
+      "coef": 1512.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,13]",
+      "coef": 1596.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,14]",
+      "coef": 1080.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[A,15]",
+      "coef": 1276.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,1]",
+      "coef": 1530.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,2]",
+      "coef": 737.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,3]",
+      "coef": 1288.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,4]",
+      "coef": 1482.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,5]",
+      "coef": 1260.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,6]",
+      "coef": 896.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,7]",
+      "coef": 2520.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,8]",
+      "coef": 949.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,9]",
+      "coef": 1335.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,10]",
+      "coef": 2090.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,11]",
+      "coef": 1054.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,12]",
+      "coef": 1176.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,13]",
+      "coef": 1520.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,14]",
+      "coef": 1125.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[B,15]",
+      "coef": 1334.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,1]",
+      "coef": 1870.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,2]",
+      "coef": 1675.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,3]",
+      "coef": 1472.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,4]",
+      "coef": 1794.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,5]",
+      "coef": 2100.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,6]",
+      "coef": 784.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,7]",
+      "coef": 2160.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,8]",
+      "coef": 1752.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,9]",
+      "coef": 1513.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,10]",
+      "coef": 1805.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,11]",
+      "coef": 930.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,12]",
+      "coef": 1764.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,13]",
+      "coef": 988.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,14]",
+      "coef": 720.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "assignment[C,15]",
+      "coef": 696.0
+    }
+  ]
+}

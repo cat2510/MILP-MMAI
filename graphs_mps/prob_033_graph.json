@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_033.mps",
+    "num_vars": 4,
+    "num_constrs": 7,
+    "num_edges": 20,
+    "model_sense": "max",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "ProcessedAmount_1_7",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.22999999999999998
+      },
+      {
+        "id": "ProcessedAmount_1_4",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.22999999999999998
+      },
+      {
+        "id": "ProcessedAmount_2_7",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.30000000000000004
+      },
+      {
+        "id": "ProcessedAmount_2_4",
+        "type": "var",
+        "vtype": "C",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.30000000000000004
+      }
+    ],
+    "constrs": [
+      {
+        "id": "Inventory_7",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 90000.0
+      },
+      {
+        "id": "Inventory_4",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 110000.0
+      },
+      {
+        "id": "AverageGrade_1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "AverageGrade_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "ProcessingCapacity",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 150000.0
+      },
+      {
+        "id": "Marketing",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 0.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "max",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "Inventory_7",
+      "dst": "ProcessedAmount_1_7",
+      "coef": 1.0
+    },
+    {
+      "src": "Inventory_7",
+      "dst": "ProcessedAmount_2_7",
+      "coef": 1.0
+    },
+    {
+      "src": "Inventory_4",
+      "dst": "ProcessedAmount_1_4",
+      "coef": 1.0
+    },
+    {
+      "src": "Inventory_4",
+      "dst": "ProcessedAmount_2_4",
+      "coef": 1.0
+    },
+    {
+      "src": "AverageGrade_1",
+      "dst": "ProcessedAmount_1_7",
+      "coef": -2.0
+    },
+    {
+      "src": "AverageGrade_1",
+      "dst": "ProcessedAmount_1_4",
+      "coef": 1.0
+    },
+    {
+      "src": "AverageGrade_2",
+      "dst": "ProcessedAmount_2_7",
+      "coef": -1.0
+    },
+    {
+      "src": "AverageGrade_2",
+      "dst": "ProcessedAmount_2_4",
+      "coef": 2.0
+    },
+    {
+      "src": "ProcessingCapacity",
+      "dst": "ProcessedAmount_1_7",
+      "coef": 1.0
+    },
+    {
+      "src": "ProcessingCapacity",
+      "dst": "ProcessedAmount_1_4",
+      "coef": 1.0
+    },
+    {
+      "src": "ProcessingCapacity",
+      "dst": "ProcessedAmount_2_7",
+      "coef": 1.0
+    },
+    {
+      "src": "ProcessingCapacity",
+      "dst": "ProcessedAmount_2_4",
+      "coef": 1.0
+    },
+    {
+      "src": "Marketing",
+      "dst": "ProcessedAmount_1_7",
+      "coef": 0.8
+    },
+    {
+      "src": "Marketing",
+      "dst": "ProcessedAmount_1_4",
+      "coef": 0.8
+    },
+    {
+      "src": "Marketing",
+      "dst": "ProcessedAmount_2_7",
+      "coef": -0.2
+    },
+    {
+      "src": "Marketing",
+      "dst": "ProcessedAmount_2_4",
+      "coef": -0.2
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProcessedAmount_1_7",
+      "coef": 0.22999999999999998
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProcessedAmount_1_4",
+      "coef": 0.22999999999999998
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProcessedAmount_2_7",
+      "coef": 0.30000000000000004
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProcessedAmount_2_4",
+      "coef": 0.30000000000000004
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_031.mps",
+    "num_vars": 3,
+    "num_constrs": 7,
+    "num_edges": 15,
+    "model_sense": "min",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "ShipmentNum[0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 5.2
+      },
+      {
+        "id": "ShipmentNum[1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 4.7
+      },
+      {
+        "id": "ShipmentNum[2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 3.5
+      }
+    ],
+    "constrs": [
+      {
+        "id": "MaxShipment_1",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 700.0
+      },
+      {
+        "id": "MaxShipment_2",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 700.0
+      },
+      {
+        "id": "MaxShipment_3",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 700.0
+      },
+      {
+        "id": "DemandSatisfaction_1",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 500.0
+      },
+      {
+        "id": "DemandSatisfaction_2",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 300.0
+      },
+      {
+        "id": "DemandSatisfaction_3",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 300.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "min",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "MaxShipment_1",
+      "dst": "ShipmentNum[0]",
+      "coef": 1.0
+    },
+    {
+      "src": "MaxShipment_2",
+      "dst": "ShipmentNum[1]",
+      "coef": 1.0
+    },
+    {
+      "src": "MaxShipment_3",
+      "dst": "ShipmentNum[2]",
+      "coef": 1.0
+    },
+    {
+      "src": "DemandSatisfaction_1",
+      "dst": "ShipmentNum[0]",
+      "coef": 0.45
+    },
+    {
+      "src": "DemandSatisfaction_1",
+      "dst": "ShipmentNum[1]",
+      "coef": 0.3
+    },
+    {
+      "src": "DemandSatisfaction_1",
+      "dst": "ShipmentNum[2]",
+      "coef": 0.15
+    },
+    {
+      "src": "DemandSatisfaction_2",
+      "dst": "ShipmentNum[0]",
+      "coef": 0.35
+    },
+    {
+      "src": "DemandSatisfaction_2",
+      "dst": "ShipmentNum[1]",
+      "coef": 0.45
+    },
+    {
+      "src": "DemandSatisfaction_2",
+      "dst": "ShipmentNum[2]",
+      "coef": 0.2
+    },
+    {
+      "src": "DemandSatisfaction_3",
+      "dst": "ShipmentNum[0]",
+      "coef": 0.2
+    },
+    {
+      "src": "DemandSatisfaction_3",
+      "dst": "ShipmentNum[1]",
+      "coef": 0.25
+    },
+    {
+      "src": "DemandSatisfaction_3",
+      "dst": "ShipmentNum[2]",
+      "coef": 0.65
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ShipmentNum[0]",
+      "coef": 5.2
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ShipmentNum[1]",
+      "coef": 4.7
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ShipmentNum[2]",
+      "coef": 3.5
+    }
+  ]
+}

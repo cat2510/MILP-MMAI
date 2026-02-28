@@ -1,0 +1,1271 @@
+{
+  "meta": {
+    "mps_path": "../ORThought/datasets/processed/LogiOR/all_mps/prob_040.mps",
+    "num_vars": 52,
+    "num_constrs": 39,
+    "num_edges": 120,
+    "model_sense": "min",
+    "has_quad_objective": false,
+    "has_quadratic_constraints": false,
+    "has_quad_constr_terms": false,
+    "linear_only_graph": true
+  },
+  "nodes": {
+    "vars": [
+      {
+        "id": "WorkersInGroup[0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1800.0
+      },
+      {
+        "id": "WorkersInGroup[1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1800.0
+      },
+      {
+        "id": "WorkersInGroup[2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1800.0
+      },
+      {
+        "id": "WorkersInGroup[3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 1800.0
+      },
+      {
+        "id": "ProductProduced[0,0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "ProductProduced[0,1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "ProductProduced[0,2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "ProductProduced[0,3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "ProductProduced[1,0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "ProductProduced[1,1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "ProductProduced[1,2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "ProductProduced[1,3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "ProductStorage[0,0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 70.0
+      },
+      {
+        "id": "ProductStorage[0,1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 70.0
+      },
+      {
+        "id": "ProductStorage[0,2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 70.0
+      },
+      {
+        "id": "ProductStorage[0,3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 70.0
+      },
+      {
+        "id": "ProductStorage[1,0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 70.0
+      },
+      {
+        "id": "ProductStorage[1,1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 70.0
+      },
+      {
+        "id": "ProductStorage[1,2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 70.0
+      },
+      {
+        "id": "ProductStorage[1,3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 70.0
+      },
+      {
+        "id": "WorkersOnDuty[0,0,0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[0,0,1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[0,0,2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[0,0,3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[0,1,0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[0,1,1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[0,1,2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[0,1,3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[1,0,0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[1,0,1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[1,0,2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[1,0,3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[1,1,0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[1,1,1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[1,1,2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[1,1,3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[2,0,0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[2,0,1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[2,0,2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[2,0,3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[2,1,0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[2,1,1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[2,1,2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[2,1,3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[3,0,0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[3,0,1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[3,0,2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[3,0,3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[3,1,0]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[3,1,1]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[3,1,2]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      },
+      {
+        "id": "WorkersOnDuty[3,1,3]",
+        "type": "var",
+        "vtype": "I",
+        "lb": 0.0,
+        "ub": null,
+        "obj": 0.0
+      }
+    ],
+    "constrs": [
+      {
+        "id": "c0",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 800.0
+      },
+      {
+        "id": "c1",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 600.0
+      },
+      {
+        "id": "c2",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 700.0
+      },
+      {
+        "id": "c3",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 900.0
+      },
+      {
+        "id": "c4",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 500.0
+      },
+      {
+        "id": "c5",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 400.0
+      },
+      {
+        "id": "c6",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 600.0
+      },
+      {
+        "id": "c7",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 300.0
+      },
+      {
+        "id": "c8",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 0.0
+      },
+      {
+        "id": "c9",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 0.0
+      },
+      {
+        "id": "c10",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 0.0
+      },
+      {
+        "id": "c11",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 0.0
+      },
+      {
+        "id": "c12",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 0.0
+      },
+      {
+        "id": "c13",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 0.0
+      },
+      {
+        "id": "c14",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 0.0
+      },
+      {
+        "id": "c15",
+        "type": "constr",
+        "sense": ">",
+        "rhs": 0.0
+      },
+      {
+        "id": "c16",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "c17",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "c18",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "c19",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "c20",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "c21",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "c22",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "c23",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "c24",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "c25",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "c26",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "c27",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "c28",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "c29",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "c30",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "c31",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "c32",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "c33",
+        "type": "constr",
+        "sense": "<",
+        "rhs": 0.0
+      },
+      {
+        "id": "c34",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "c35",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "c36",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "c37",
+        "type": "constr",
+        "sense": "=",
+        "rhs": 0.0
+      },
+      {
+        "id": "__OBJ__",
+        "type": "obj",
+        "sense": "min",
+        "rhs": 0.0
+      }
+    ]
+  },
+  "edges": [
+    {
+      "src": "c0",
+      "dst": "ProductProduced[0,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "c0",
+      "dst": "ProductStorage[0,0]",
+      "coef": -1.0
+    },
+    {
+      "src": "c1",
+      "dst": "ProductProduced[0,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "c1",
+      "dst": "ProductStorage[0,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "c1",
+      "dst": "ProductStorage[0,1]",
+      "coef": -1.0
+    },
+    {
+      "src": "c2",
+      "dst": "ProductProduced[0,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "c2",
+      "dst": "ProductStorage[0,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "c2",
+      "dst": "ProductStorage[0,2]",
+      "coef": -1.0
+    },
+    {
+      "src": "c3",
+      "dst": "ProductProduced[0,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "c3",
+      "dst": "ProductStorage[0,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "c3",
+      "dst": "ProductStorage[0,3]",
+      "coef": -1.0
+    },
+    {
+      "src": "c4",
+      "dst": "ProductProduced[1,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "c4",
+      "dst": "ProductStorage[1,0]",
+      "coef": -1.0
+    },
+    {
+      "src": "c5",
+      "dst": "ProductProduced[1,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "c5",
+      "dst": "ProductStorage[1,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "c5",
+      "dst": "ProductStorage[1,1]",
+      "coef": -1.0
+    },
+    {
+      "src": "c6",
+      "dst": "ProductProduced[1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "c6",
+      "dst": "ProductStorage[1,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "c6",
+      "dst": "ProductStorage[1,2]",
+      "coef": -1.0
+    },
+    {
+      "src": "c7",
+      "dst": "ProductProduced[1,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "c7",
+      "dst": "ProductStorage[1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "c7",
+      "dst": "ProductStorage[1,3]",
+      "coef": -1.0
+    },
+    {
+      "src": "c8",
+      "dst": "ProductProduced[0,0]",
+      "coef": -1.0
+    },
+    {
+      "src": "c8",
+      "dst": "WorkersOnDuty[0,0,0]",
+      "coef": 60.0
+    },
+    {
+      "src": "c8",
+      "dst": "WorkersOnDuty[1,0,0]",
+      "coef": 60.0
+    },
+    {
+      "src": "c8",
+      "dst": "WorkersOnDuty[2,0,0]",
+      "coef": 60.0
+    },
+    {
+      "src": "c8",
+      "dst": "WorkersOnDuty[3,0,0]",
+      "coef": 60.0
+    },
+    {
+      "src": "c9",
+      "dst": "ProductProduced[0,1]",
+      "coef": -1.0
+    },
+    {
+      "src": "c9",
+      "dst": "WorkersOnDuty[0,0,1]",
+      "coef": 60.0
+    },
+    {
+      "src": "c9",
+      "dst": "WorkersOnDuty[1,0,1]",
+      "coef": 60.0
+    },
+    {
+      "src": "c9",
+      "dst": "WorkersOnDuty[2,0,1]",
+      "coef": 60.0
+    },
+    {
+      "src": "c9",
+      "dst": "WorkersOnDuty[3,0,1]",
+      "coef": 60.0
+    },
+    {
+      "src": "c10",
+      "dst": "ProductProduced[0,2]",
+      "coef": -1.0
+    },
+    {
+      "src": "c10",
+      "dst": "WorkersOnDuty[0,0,2]",
+      "coef": 60.0
+    },
+    {
+      "src": "c10",
+      "dst": "WorkersOnDuty[1,0,2]",
+      "coef": 60.0
+    },
+    {
+      "src": "c10",
+      "dst": "WorkersOnDuty[2,0,2]",
+      "coef": 60.0
+    },
+    {
+      "src": "c10",
+      "dst": "WorkersOnDuty[3,0,2]",
+      "coef": 60.0
+    },
+    {
+      "src": "c11",
+      "dst": "ProductProduced[0,3]",
+      "coef": -1.0
+    },
+    {
+      "src": "c11",
+      "dst": "WorkersOnDuty[0,0,3]",
+      "coef": 60.0
+    },
+    {
+      "src": "c11",
+      "dst": "WorkersOnDuty[1,0,3]",
+      "coef": 60.0
+    },
+    {
+      "src": "c11",
+      "dst": "WorkersOnDuty[2,0,3]",
+      "coef": 60.0
+    },
+    {
+      "src": "c11",
+      "dst": "WorkersOnDuty[3,0,3]",
+      "coef": 60.0
+    },
+    {
+      "src": "c12",
+      "dst": "ProductProduced[1,0]",
+      "coef": -1.0
+    },
+    {
+      "src": "c12",
+      "dst": "WorkersOnDuty[0,1,0]",
+      "coef": 40.0
+    },
+    {
+      "src": "c12",
+      "dst": "WorkersOnDuty[1,1,0]",
+      "coef": 40.0
+    },
+    {
+      "src": "c12",
+      "dst": "WorkersOnDuty[2,1,0]",
+      "coef": 40.0
+    },
+    {
+      "src": "c12",
+      "dst": "WorkersOnDuty[3,1,0]",
+      "coef": 40.0
+    },
+    {
+      "src": "c13",
+      "dst": "ProductProduced[1,1]",
+      "coef": -1.0
+    },
+    {
+      "src": "c13",
+      "dst": "WorkersOnDuty[0,1,1]",
+      "coef": 40.0
+    },
+    {
+      "src": "c13",
+      "dst": "WorkersOnDuty[1,1,1]",
+      "coef": 40.0
+    },
+    {
+      "src": "c13",
+      "dst": "WorkersOnDuty[2,1,1]",
+      "coef": 40.0
+    },
+    {
+      "src": "c13",
+      "dst": "WorkersOnDuty[3,1,1]",
+      "coef": 40.0
+    },
+    {
+      "src": "c14",
+      "dst": "ProductProduced[1,2]",
+      "coef": -1.0
+    },
+    {
+      "src": "c14",
+      "dst": "WorkersOnDuty[0,1,2]",
+      "coef": 40.0
+    },
+    {
+      "src": "c14",
+      "dst": "WorkersOnDuty[1,1,2]",
+      "coef": 40.0
+    },
+    {
+      "src": "c14",
+      "dst": "WorkersOnDuty[2,1,2]",
+      "coef": 40.0
+    },
+    {
+      "src": "c14",
+      "dst": "WorkersOnDuty[3,1,2]",
+      "coef": 40.0
+    },
+    {
+      "src": "c15",
+      "dst": "ProductProduced[1,3]",
+      "coef": -1.0
+    },
+    {
+      "src": "c15",
+      "dst": "WorkersOnDuty[0,1,3]",
+      "coef": 40.0
+    },
+    {
+      "src": "c15",
+      "dst": "WorkersOnDuty[1,1,3]",
+      "coef": 40.0
+    },
+    {
+      "src": "c15",
+      "dst": "WorkersOnDuty[2,1,3]",
+      "coef": 40.0
+    },
+    {
+      "src": "c15",
+      "dst": "WorkersOnDuty[3,1,3]",
+      "coef": 40.0
+    },
+    {
+      "src": "c16",
+      "dst": "WorkersOnDuty[0,0,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "c17",
+      "dst": "WorkersOnDuty[0,1,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "c18",
+      "dst": "WorkersInGroup[0]",
+      "coef": -1.0
+    },
+    {
+      "src": "c18",
+      "dst": "WorkersOnDuty[0,0,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "c18",
+      "dst": "WorkersOnDuty[0,1,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "c19",
+      "dst": "WorkersInGroup[0]",
+      "coef": -1.0
+    },
+    {
+      "src": "c19",
+      "dst": "WorkersOnDuty[0,0,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "c19",
+      "dst": "WorkersOnDuty[0,1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "c20",
+      "dst": "WorkersInGroup[0]",
+      "coef": -1.0
+    },
+    {
+      "src": "c20",
+      "dst": "WorkersOnDuty[0,0,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "c20",
+      "dst": "WorkersOnDuty[0,1,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "c21",
+      "dst": "WorkersInGroup[1]",
+      "coef": -1.0
+    },
+    {
+      "src": "c21",
+      "dst": "WorkersOnDuty[1,0,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "c21",
+      "dst": "WorkersOnDuty[1,1,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "c22",
+      "dst": "WorkersOnDuty[1,0,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "c23",
+      "dst": "WorkersOnDuty[1,1,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "c24",
+      "dst": "WorkersInGroup[1]",
+      "coef": -1.0
+    },
+    {
+      "src": "c24",
+      "dst": "WorkersOnDuty[1,0,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "c24",
+      "dst": "WorkersOnDuty[1,1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "c25",
+      "dst": "WorkersInGroup[1]",
+      "coef": -1.0
+    },
+    {
+      "src": "c25",
+      "dst": "WorkersOnDuty[1,0,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "c25",
+      "dst": "WorkersOnDuty[1,1,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "c26",
+      "dst": "WorkersInGroup[2]",
+      "coef": -1.0
+    },
+    {
+      "src": "c26",
+      "dst": "WorkersOnDuty[2,0,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "c26",
+      "dst": "WorkersOnDuty[2,1,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "c27",
+      "dst": "WorkersInGroup[2]",
+      "coef": -1.0
+    },
+    {
+      "src": "c27",
+      "dst": "WorkersOnDuty[2,0,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "c27",
+      "dst": "WorkersOnDuty[2,1,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "c28",
+      "dst": "WorkersOnDuty[2,0,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "c29",
+      "dst": "WorkersOnDuty[2,1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "c30",
+      "dst": "WorkersInGroup[2]",
+      "coef": -1.0
+    },
+    {
+      "src": "c30",
+      "dst": "WorkersOnDuty[2,0,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "c30",
+      "dst": "WorkersOnDuty[2,1,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "c31",
+      "dst": "WorkersInGroup[3]",
+      "coef": -1.0
+    },
+    {
+      "src": "c31",
+      "dst": "WorkersOnDuty[3,0,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "c31",
+      "dst": "WorkersOnDuty[3,1,0]",
+      "coef": 1.0
+    },
+    {
+      "src": "c32",
+      "dst": "WorkersInGroup[3]",
+      "coef": -1.0
+    },
+    {
+      "src": "c32",
+      "dst": "WorkersOnDuty[3,0,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "c32",
+      "dst": "WorkersOnDuty[3,1,1]",
+      "coef": 1.0
+    },
+    {
+      "src": "c33",
+      "dst": "WorkersInGroup[3]",
+      "coef": -1.0
+    },
+    {
+      "src": "c33",
+      "dst": "WorkersOnDuty[3,0,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "c33",
+      "dst": "WorkersOnDuty[3,1,2]",
+      "coef": 1.0
+    },
+    {
+      "src": "c34",
+      "dst": "WorkersOnDuty[3,0,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "c35",
+      "dst": "WorkersOnDuty[3,1,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "c36",
+      "dst": "ProductStorage[0,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "c37",
+      "dst": "ProductStorage[1,3]",
+      "coef": 1.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "WorkersInGroup[0]",
+      "coef": 1800.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "WorkersInGroup[1]",
+      "coef": 1800.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "WorkersInGroup[2]",
+      "coef": 1800.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "WorkersInGroup[3]",
+      "coef": 1800.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductStorage[0,0]",
+      "coef": 70.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductStorage[0,1]",
+      "coef": 70.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductStorage[0,2]",
+      "coef": 70.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductStorage[0,3]",
+      "coef": 70.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductStorage[1,0]",
+      "coef": 70.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductStorage[1,1]",
+      "coef": 70.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductStorage[1,2]",
+      "coef": 70.0
+    },
+    {
+      "src": "__OBJ__",
+      "dst": "ProductStorage[1,3]",
+      "coef": 70.0
+    }
+  ]
+}
