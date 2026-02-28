@@ -129,6 +129,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-    """ python mps2graph.py --probs 080 019 054 \
+    """ python mps2graph.py --probs 080 \
   --root ../ORThought/datasets/processed/LogiOR/all_mps \
   --out ./graphs_mps"""
