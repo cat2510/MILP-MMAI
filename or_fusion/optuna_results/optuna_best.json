@@ -1,0 +1,14 @@
+{
+  "best_value": 0.6755102040816325,
+  "best_params": {
+    "fusion": "tensor",
+    "graph_encoder": "gcn",
+    "lr": 0.0008423477644100007,
+    "batch_size": 16,
+    "dropout": 0.45752358911364166,
+    "d_g": 256,
+    "d_t": 256,
+    "freeze_text": true,
+    "epochs": 40
+  }
+}

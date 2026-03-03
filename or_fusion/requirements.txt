@@ -1,0 +1,6 @@
+# setup cache directories 
+# when you run transformers, it tries to download pre-trained models.
+#This folder can fill up the 10GB-20GB home quota very quickly on engaging node!
+export TRANSFORMERS_CACHE="/home/cat2510/MMAI/cache"
+export HF_HOME="/home/cat2510/MMAI/cache"
+mkdir -p /home/cat2510/MMAI/cache
