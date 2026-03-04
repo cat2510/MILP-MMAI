@@ -1,0 +1,77 @@
+{
+  "warehouse": {
+    "n": 15,
+    "n_correct": 9,
+    "accuracy": 0.6
+  },
+  "transport": {
+    "n": 26,
+    "n_correct": 12,
+    "accuracy": 0.46153846153846156
+  },
+  "allocation": {
+    "n": 4,
+    "n_correct": 3,
+    "accuracy": 0.75
+  },
+  "delivery": {
+    "n": 24,
+    "n_correct": 9,
+    "accuracy": 0.375
+  },
+  "minimize": {
+    "n": 39,
+    "n_correct": 16,
+    "accuracy": 0.41025641025641024
+  },
+  "maximize": {
+    "n": 24,
+    "n_correct": 15,
+    "accuracy": 0.625
+  },
+  "inventory": {
+    "n": 9,
+    "n_correct": 7,
+    "accuracy": 0.7777777777777778
+  },
+  "demand": {
+    "n": 39,
+    "n_correct": 21,
+    "accuracy": 0.5384615384615384
+  },
+  "supply": {
+    "n": 10,
+    "n_correct": 7,
+    "accuracy": 0.7
+  },
+  "cost": {
+    "n": 50,
+    "n_correct": 27,
+    "accuracy": 0.54
+  },
+  "distance": {
+    "n": 28,
+    "n_correct": 11,
+    "accuracy": 0.39285714285714285
+  },
+  "location": {
+    "n": 23,
+    "n_correct": 11,
+    "accuracy": 0.4782608695652174
+  },
+  "customer": {
+    "n": 20,
+    "n_correct": 6,
+    "accuracy": 0.3
+  },
+  "product": {
+    "n": 24,
+    "n_correct": 13,
+    "accuracy": 0.5416666666666666
+  },
+  "capacity": {
+    "n": 42,
+    "n_correct": 22,
+    "accuracy": 0.5238095238095238
+  }
+}

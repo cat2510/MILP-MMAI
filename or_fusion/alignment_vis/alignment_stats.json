@@ -1,0 +1,6 @@
+{
+  "zero_shot_accuracy": 0.4891304347826087,
+  "mean_diagonal_sim": 0.70306396484375,
+  "min_diagonal_sim": 0.42664971947669983,
+  "max_diagonal_sim": 0.8154404759407043
+}

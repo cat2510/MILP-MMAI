@@ -11,6 +11,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader
 
 from data.logior_dataset import LogiORGraphTextDataset, collate_graph_text
+from data.pair_dataset import LogiORGraphTextPairDataset
 from data.graph_builders import GraphBuildConfig
 from models.graph_encoder_gcn import GraphEncoderGCN, GCNConfig
 from models.text_encoder import TextEncoder, TextEncoderConfig
@@ -39,6 +40,22 @@ class LinearProjector(nn.Module):
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         return self.proj(x)
+
+
+class PairBCELoss(nn.Module):
+    """BCE loss for pairwise (graph, text) with explicit positive/negative labels.
+    Uses einsum for similarity. Good for pair_data with k_neg negatives."""
+    def __init__(self, temperature: float = 0.07):
+        super().__init__()
+        self.temperature = temperature
+
+    def forward(self, z_g: torch.Tensor, z_t: torch.Tensor, y: torch.Tensor) -> torch.Tensor:
+        z_g = F.normalize(z_g, dim=-1)
+        z_t = F.normalize(z_t, dim=-1)
+        # Pairwise similarity [B]: einsum
+        sim = torch.einsum("bd,bd->b", z_g, z_t)
+        logits = sim / self.temperature
+        return F.binary_cross_entropy_with_logits(logits, y.float())
 
 
 # ---------- Zero-shot classification (homework requirement) ----------
@@ -107,8 +124,11 @@ def run_zero_shot_eval(
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--graphs_dir", required=True)
-    ap.add_argument("--logior_root", required=True)
+    ap.add_argument("--graphs_dir", required=True, help="folder with prob_*_graph.json (or parent for pair_data)")
+    ap.add_argument("--logior_root", required=True, help="LogiOR root with prob_XXX/question.txt")
+    ap.add_argument("--train_jsonl", default=None, help="if set, use pair_data (pos+neg) instead of same-problem only")
+    ap.add_argument("--val_jsonl", default=None, help="validation jsonl (optional, for pair_data)")
+    ap.add_argument("--base_dir", default=None, help="base for resolving pair_data paths; default=dirname(graphs_dir)")
     ap.add_argument("--batch_size", type=int, default=8)
     ap.add_argument("--epochs", type=int, default=10)
     ap.add_argument("--lr", type=float, default=2e-4)
@@ -142,22 +162,41 @@ def main():
     device = torch.device(args.device)
     graph_cfg = GraphBuildConfig(use_bidirectional_edges=True, add_degree_feature=True)
 
-    ds = LogiORGraphTextDataset(
-        graphs_dir=args.graphs_dir,
-        logior_root=args.logior_root,
-        graph_cfg=graph_cfg,
-        max_text_chars=12000,
-    )
-    if len(ds) == 0:
-        raise ValueError(
-            f"Dataset is empty. Found 0 graph–text pairs. "
-            f"Check --graphs_dir={args.graphs_dir} and --logior_root={args.logior_root} "
-            f"(resolved: {os.path.abspath(args.logior_root)}). "
-            f"When running from or_fusion, use ../../ORThought/datasets/processed/LogiOR for logior_root if ORThought is at repo root."
-        )
-    dl = DataLoader(ds, batch_size=args.batch_size, shuffle=True, collate_fn=collate_graph_text)
+    use_pair_data = args.train_jsonl is not None
 
-    one = ds[0]["graph"]
+    if use_pair_data:
+        base = args.base_dir or os.path.dirname(os.path.normpath(args.graphs_dir))
+        if not base or base == ".":
+            base = os.getcwd()
+        train_ds = LogiORGraphTextPairDataset(
+            args.train_jsonl,
+            graph_cfg=graph_cfg,
+            base_dir=base,
+            graphs_dir=base,
+            max_text_chars=12000,
+        )
+        if len(train_ds) == 0:
+            raise ValueError(f"pair_data train empty: {args.train_jsonl}")
+        dl = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True, collate_fn=collate_graph_text)
+        crit = PairBCELoss(temperature=args.temperature).to(device)
+    else:
+        ds = LogiORGraphTextDataset(
+            graphs_dir=args.graphs_dir,
+            logior_root=args.logior_root,
+            graph_cfg=graph_cfg,
+            max_text_chars=12000,
+        )
+        if len(ds) == 0:
+            raise ValueError(
+                f"Dataset is empty. Found 0 graph–text pairs. "
+                f"Check --graphs_dir={args.graphs_dir} and --logior_root={args.logior_root} "
+                f"(resolved: {os.path.abspath(args.logior_root)}). "
+                f"When running from or_fusion, use ../../ORThought/datasets/processed/LogiOR for logior_root if ORThought is at repo root."
+            )
+        dl = DataLoader(ds, batch_size=args.batch_size, shuffle=True, collate_fn=collate_graph_text)
+        crit = SymmetricInfoNCE(temperature=args.temperature).to(device)
+
+    one = (train_ds[0]["graph"] if use_pair_data else ds[0]["graph"])
     in_dim = one.x.size(-1)
 
     g_enc = GraphEncoderGCN(GCNConfig(
@@ -180,7 +219,6 @@ def main():
         h = t_enc(txts, device=device)
         return text_proj(h) if text_proj is not None else h
 
-    crit = SymmetricInfoNCE(temperature=args.temperature).to(device)
     params = list(g_enc.parameters()) + list(t_enc.parameters()) + list(crit.parameters())
     if graph_proj is not None:
         params += list(graph_proj.parameters()) + list(text_proj.parameters())
@@ -200,7 +238,11 @@ def main():
             texts = batch["text"]
             z_g = encode_g(graph)
             z_t = encode_t(texts)
-            loss = crit(z_g, z_t)
+            if use_pair_data:
+                y = batch["y"].to(device)
+                loss = crit(z_g, z_t, y)
+            else:
+                loss = crit(z_g, z_t)
             opt.zero_grad()
             loss.backward()
             torch.nn.utils.clip_grad_norm_(params, 1.0)
@@ -213,8 +255,9 @@ def main():
     ckpt = {
         "graph_encoder": g_enc.state_dict(),
         "text_encoder": t_enc.state_dict(),
-        "logit_scale": crit.state_dict(),
     }
+    if hasattr(crit, "state_dict"):
+        ckpt["logit_scale"] = crit.state_dict()
     if graph_proj is not None:
         ckpt["graph_proj"] = graph_proj.state_dict()
         ckpt["text_proj"] = text_proj.state_dict()
@@ -222,9 +265,20 @@ def main():
     print(f"saved {args.ckpt_dir}/contrastive_encoders.pt")
 
     if args.run_zero_shot:
-        acc = run_zero_shot_eval(g_enc, t_enc, ds, device, graph_proj, text_proj, args.batch_size)
+        eval_ds = ds if not use_pair_data else LogiORGraphTextDataset(
+            graphs_dir=args.graphs_dir,
+            logior_root=args.logior_root,
+            graph_cfg=graph_cfg,
+            max_text_chars=12000,
+        )
+        acc = run_zero_shot_eval(g_enc, t_enc, eval_ds, device, graph_proj, text_proj, args.batch_size)
         print(f"zero-shot accuracy: {acc:.4f}")
 
 
 if __name__ == "__main__":
     main()
+    """ usage example:
+    python -m train.train_contrastive \
+  --graphs_dir ../graphs_mps \
+  --logior_root ../ORThought/datasets/processed/LogiOR \
+  --projector linear --epochs 20 --run_zero_shot"""

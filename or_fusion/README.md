@@ -293,5 +293,45 @@ For each `prob_XXX`:
 
 So you get 92 **same-problem** pairs (graph and text always match). **Negatives come from InfoNCE via in-batch negatives.**
 
+**Apple-to-apple with fusion (use pair_data):**
+
+Train on explicit positive + negative pairs (same data as optuna/fusion):
+
+```bash
+# Regenerate pair_data with k_neg>=5
+python data/build_pair_labels.py --graphs_dir .. --logior_root ../../ORThought/datasets/processed/LogiOR --out_dir ../pair_data --k_neg 5
+
+# Contrastive on pair_data
+python -m train.train_contrastive \
+  --graphs_dir ../graphs_mps \
+  --logior_root ../ORThought/datasets/processed/LogiOR \
+  --train_jsonl ../pair_data/train.jsonl \
+  --base_dir .. \
+  --epochs 20 --run_zero_shot
+```
+
+Uses BCE loss over pairwise similarities (einsum); explicit negatives improve alignment.
+
+---
+
+## **7. Alignment visualization**
+
+Visual examples of data post alignment (homework requirement):
+
+```bash
+python -m train.visualize_alignment \
+  --ckpt ./ckpts/contrastive_encoders.pt \
+  --graphs_dir ../graphs_mps \
+  --logior_root ../ORThought/datasets/processed/LogiOR \
+  --out_dir ./alignment_vis
+```
+
+Produces:
+
+- `similarity_heatmap.png` — graph vs text similarity matrix (diagonal = correct matches)
+- `example_success_*.png`, `example_failure_*.png` — success/failure cases with graph stats and text
+- `embeddings_tsne.png` — t-SNE of graph (○) and text (×) embeddings
+- `alignment_stats.json`, `alignment_examples_summary.json` — for report
+
 ---
 

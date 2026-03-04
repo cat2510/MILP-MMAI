@@ -1,0 +1,39 @@
+{
+  "successes": [
+    {
+      "prob_id": "prob_041",
+      "sim_correct": 0.8154404759407043,
+      "correct": true
+    },
+    {
+      "prob_id": "prob_020",
+      "sim_correct": 0.8100115656852722,
+      "correct": true
+    },
+    {
+      "prob_id": "prob_045",
+      "sim_correct": 0.8047049045562744,
+      "correct": true
+    }
+  ],
+  "failures": [
+    {
+      "prob_id": "prob_011",
+      "sim_correct": 0.42664971947669983,
+      "correct": false,
+      "predicted": "prob_085"
+    },
+    {
+      "prob_id": "prob_028",
+      "sim_correct": 0.5017510056495667,
+      "correct": false,
+      "predicted": "prob_006"
+    },
+    {
+      "prob_id": "prob_043",
+      "sim_correct": 0.5141535401344299,
+      "correct": false,
+      "predicted": "prob_021"
+    }
+  ]
+}
