@@ -1,0 +1,7 @@
+# Bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Optional: uncomment to ignore run outputs (keep if you want them in git)
+# or_fusion/optuna_results/
