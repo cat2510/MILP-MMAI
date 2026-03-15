@@ -1,0 +1,12 @@
+{
+  "prob_id": "prob_045",
+  "problem_type": "LP",
+  "problem_size": "Small",
+  "solution_status": "OPTIMAL",
+  "ground_truth": 28864.0,
+  "details": {
+    "variables_num": 11,
+    "constraints_num": 7,
+    "nonzeros_num": 31
+  }
+}

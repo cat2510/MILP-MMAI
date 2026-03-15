@@ -3,6 +3,4 @@
 .cursor/
 __pycache__/
 MultiBench
-data/
 MILP-MMAI-cat_files/
-mmai-data/

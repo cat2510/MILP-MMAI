@@ -1,0 +1,12 @@
+{
+  "prob_id": "prob_037",
+  "problem_type": "ILP",
+  "problem_size": "Toy",
+  "solution_status": "OPTIMAL",
+  "ground_truth": 156500.0,
+  "details": {
+    "variables_num": 5,
+    "constraints_num": 4,
+    "nonzeros_num": 10
+  }
+}

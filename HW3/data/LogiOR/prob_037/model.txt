@@ -1,0 +1,49 @@
+Set:
+1. Categories
+The set of products categories, \( I = \{1, 2\} \), where 1 represents Basic Product and 2 represents Advanced Product. 
+
+Parameter:
+1. Product Production per Raw Material
+\( p = [2, 3] \)
+2. Labor Hours per Raw Material
+\( h^r = 2 \)
+3. Labor Hours per Premium Product
+\( h^q = [3, 4] \)
+4. Conversion Rate
+# The number of products not further processed needed to produce one unit of further processed product.
+\( p^q = [1, 1] \) 
+5. Processing Cost per Premium Product ($/unit)
+\( c^q = [5, 6] \)
+6. Product Selling Price ($/unit)
+\( s = [10, 12] \)
+7. Premium Product Selling Price ($/unit)
+\( s^q = [20, 25] \)
+8. Raw Material Cost ($/unit)
+\( c^r = 5 \)
+9. Max Labor Hours
+\( H_{\max} = 8000 \)
+10. Max Raw Material
+\( R_{\max} = 3000 \)
+
+Decision variable:
+1. RawMaterialPurchased
+Integer variable, \( r \in \mathbb{Z}_{\geq 0} \), the amount of raw material purchased in units.
+2. ProductProduced
+Integer variable, \( x_{i} \in \mathbb{Z}_{\geq 0}, \forall i \in I \), the amount of product without further processing produced in units.
+3. PremiumProductProduced
+Integer variable, \( y_{i} \in \mathbb{Z}_{\geq 0}, \forall i \in I \), the amount of further processed product produced in units.
+
+Objective:
+1. Maximize the total profit.
+max: \sum_{i \in I} s_{i} x_{i} + \sum_{i \in I} s^q_{i} y_{i} - c^r r - \sum_{i \in I} c^q_{i} y_{i}
+Constraint:
+1. Labor hours constraint.
+h^r r + \sum_{i \in I} h^q_{i} y_{i} \leq H_{\max}
+2. Raw material constraint.
+r \leq R_{\max}
+3. Material balance constraint.
+x_{i} + p^q_{i} y_{i} = p_{i} r, \forall i \in I
+
+Type:
+Integer, Linear, Linear
+ILP

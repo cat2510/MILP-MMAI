@@ -1,0 +1,12 @@
+{
+  "prob_id": "prob_001",
+  "problem_type": "NLP",
+  "problem_size": "Small",
+  "solution_status": "OPTIMAL",
+  "ground_truth": 537.0,
+  "details": {
+    "variables_num": 24,
+    "constraints_num": 11,
+    "nonzeros_num": 48
+  }
+}
