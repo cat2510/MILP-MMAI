@@ -1,0 +1,8 @@
+﻿.venv/
+.venv312/
+.cursor/
+__pycache__/
+MultiBench
+data/
+MILP-MMAI-cat_files/
+mmai-data/

@@ -1,0 +1,18 @@
+# HW3: Multimodal LLMs - MILP text-graph dataset + VLM fine-tuning
+numpy>=1.24
+matplotlib>=3.7
+networkx>=3.0
+Pillow>=9.0
+transformers>=4.36
+accelerate>=0.25
+bitsandbytes>=0.41
+peft>=0.7
+# Optional: only needed if converting MPS to graph JSON
+# gurobipy>=10.0
+
+# --- GPU (local NVIDIA, e.g. RTX 5060): use Python 3.12 + PyTorch CUDA 12.8 ---
+# Do NOT install torch from this file for GPU. Run instead:
+#   py -3.12 -m venv .venv312
+#   .venv312\Scripts\pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128 --no-cache-dir
+#   .venv312\Scripts\pip install -r requirements.txt
+# Then select kernel .venv312 when running the notebook.
