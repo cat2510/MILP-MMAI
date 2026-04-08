@@ -1,0 +1,12 @@
+{
+  "prob_id": "prob_021",
+  "problem_type": "ILP",
+  "problem_size": "Small",
+  "solution_status": "OPTIMAL",
+  "ground_truth": 14110.0,
+  "details": {
+    "variables_num": 16,
+    "constraints_num": 14,
+    "nonzeros_num": 31
+  }
+}

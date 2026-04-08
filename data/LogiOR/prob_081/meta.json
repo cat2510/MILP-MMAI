@@ -1,0 +1,12 @@
+{
+  "prob_id": "prob_081",
+  "problem_type": "NLP",
+  "problem_size": "Toy",
+  "solution_status": "OPTIMAL",
+  "ground_truth": 670003.8,
+  "details": {
+    "variables_num": 3,
+    "constraints_num": 1,
+    "nonzeros_num": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "prob_id": "prob_058",
+  "problem_type": "MILP",
+  "problem_size": "Medium",
+  "solution_status": "OPTIMAL",
+  "ground_truth": 75.0,
+  "details": {
+    "variables_num": 313,
+    "constraints_num": 354,
+    "nonzeros_num": 1092
+  }
+}
